@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Bad Time Simulator Reimagined</name>
-    <description>you really are a freak, huh?</description>
-    <version>4.5.0</version>
-    <author>KayoticCarnige</author>
+    <description>i hate mondays.</description>
+    <version>5.0.0</version>
+    <author>KiCKTheBucket</author>
     <author-email></author-email>
-    <author-website>https://kckarnige.is-a.dev/BadTimeRevamped</author-website>
+    <author-website>https://kckarnige.online/BadTimeRevamped</author-website>
     <app-id>com.kckarnige.btsimre</app-id>
     <unique-id>3pln6vqtdnxgu</unique-id>
     <saved-with-version>28000</saved-with-version>
@@ -840,13 +840,8 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="ShrugRight" pingpong="0" repeatcount="1" repeatto="0" sid="805709879796383" speed="5">
-                        <frame duration="1" hotspotX="0.444444" hotspotY="0.962963">
-                            <image-point name="Head" x="0.444444" y="0.259259" />
-                        </frame>
-                    </animation>
-                    <animation framecount="1" loop="0" name="ShrugLeft" pingpong="0" repeatcount="1" repeatto="0" sid="416076542201963" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="1">
-                            <image-point name="Head" x="0.5" y="0.222222" />
+                        <frame duration="1" hotspotX="0.4375" hotspotY="0.962963">
+                            <image-point name="Head" x="0.4375" y="0.259259" />
                         </frame>
                     </animation>
                 </animation-folder>
@@ -1395,7 +1390,7 @@
                         <frame duration="1" hotspotX="0.505728" hotspotY="-0.109244" />
                         <frame duration="1" hotspotX="0.505728" hotspotY="-0.109244" />
                     </animation>
-                    <animation framecount="5" loop="0" name="FadeToVisible" pingpong="0" repeatcount="1" repeatto="0" sid="612819247647638" speed="15">
+                    <animation framecount="5" loop="0" name="FadeToVisible" pingpong="0" repeatcount="1" repeatto="0" sid="345082711783659" speed="15">
                         <frame duration="1" hotspotX="0.505728" hotspotY="-0.109244" />
                         <frame duration="1" hotspotX="0.505728" hotspotY="-0.109244" />
                         <frame duration="1" hotspotX="0.505728" hotspotY="-0.109244" />

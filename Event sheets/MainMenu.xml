@@ -178,7 +178,7 @@
         <event-block sid="304307819878449">
             <conditions>
                 <condition id="-8" name="Compare two values" sid="354663769613214" type="System">
-                    <param id="0" name="First value">ShowBuildInfo</param>
+                    <param id="0" name="First value">DevMode</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Second value">1</param>
                 </condition>
@@ -310,7 +310,7 @@
         <event-block sid="843561855276330">
             <conditions>
                 <condition id="-8" name="Compare two values" sid="940489064623877" type="System">
-                    <param id="0" name="First value">ShowBuildInfo</param>
+                    <param id="0" name="First value">DevMode</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Second value">0</param>
                 </condition>
@@ -543,7 +543,7 @@
                             <param id="3" name="Y">256</param>
                         </action>
                         <action id="0" name="Set text" sid="489665522615425" type="DefaultFont">
-                            <param id="0" name="Text">&quot; &quot; &amp; newline &amp; &quot;By KayoticCarnige&quot;</param>
+                            <param id="0" name="Text">&quot; &quot; &amp; newline &amp; &quot;By KiCKTheBucket&quot;</param>
                         </action>
                         <action id="-7" name="Set size" sid="837166391605115" type="DefaultFont">
                             <param id="0" name="Width">640</param>
@@ -1338,7 +1338,7 @@
                     <param id="0" name="Scale">1</param>
                 </action>
                 <action id="0" name="Set text" sid="772290365381265" type="DefaultFont">
-                    <param id="0" name="Text">&quot;KayoticCarnige - This whole mod :)&quot;</param>
+                    <param id="0" name="Text">&quot;KiCKTheBucket - This whole mod :)&quot;</param>
                 </action>
                 <action id="7" name="Set horizontal alignment" sid="457320975425882" type="DefaultFont">
                     <param id="0" name="Horizontal alignment">1</param>
@@ -1478,6 +1478,11 @@
                                     <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Second value">&quot;KC&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="724399549660299" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KICKTB&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -1668,6 +1673,11 @@
                                     <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Second value">&quot;SANS&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="936278014279578" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KICKTB&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />

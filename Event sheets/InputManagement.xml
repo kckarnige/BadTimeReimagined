@@ -255,7 +255,7 @@
                                 <event-block sid="604218839910410">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="793488743626818" type="System">
-                                            <param id="0" name="First value">ShowBuildInfo</param>
+                                            <param id="0" name="First value">DevMode</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Second value">1</param>
                                         </condition>
@@ -437,7 +437,7 @@
                                 <event-block sid="124372229417503">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="417608230050438" type="System">
-                                            <param id="0" name="First value">ShowBuildInfo</param>
+                                            <param id="0" name="First value">DevMode</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Second value">1</param>
                                         </condition>
@@ -543,6 +543,11 @@
                             <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;KC&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="874362656914216" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;KICKTB&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1173,6 +1178,11 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;KC&quot;</param>
                         </condition>
+                        <condition id="-8" name="Compare two values" sid="464813202131681" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;KICKTB&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="741470634719166" type="PlayerNameFont">
@@ -1655,7 +1665,7 @@
                         <event-block sid="375577751092236">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="462714330268752" type="System">
-                                    <param id="0" name="Variable">ShowBuildInfo</param>
+                                    <param id="0" name="Variable">DevMode</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
@@ -1722,7 +1732,7 @@
                         <event-block sid="419630779815891">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="387964684940995" type="System">
-                                    <param id="0" name="Variable">ShowBuildInfo</param>
+                                    <param id="0" name="Variable">DevMode</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>

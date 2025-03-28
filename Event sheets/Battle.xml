@@ -553,7 +553,7 @@
                 <event-block sid="183029995372810">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="246200831563022" type="System">
-                            <param id="0" name="First value">ShowBuildInfo</param>
+                            <param id="0" name="First value">DevMode</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">1</param>
                         </condition>
@@ -592,7 +592,7 @@
                 <event-block sid="670334533567790">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="868718289936577" type="System">
-                            <param id="0" name="First value">ShowBuildInfo</param>
+                            <param id="0" name="First value">DevMode</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">1</param>
                         </condition>
@@ -1056,7 +1056,7 @@
                                                     <param id="2" name="Value">MODE_ENDLESS</param>
                                                 </condition>
                                                 <condition id="-14" name="Compare variable" sid="326783386207021" type="System">
-                                                    <param id="0" name="Variable">ShowBuildInfo</param>
+                                                    <param id="0" name="Variable">DevMode</param>
                                                     <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Value">1</param>
                                                 </condition>
@@ -1374,7 +1374,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="6654481296984306">
+                        <event-block bookmark="1" sid="6654481296984306">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="3378806070575378" type="SansLegs">
                                     <param id="0" name="Instance variable">HitAttempts</param>
@@ -1399,28 +1399,55 @@
                                     <param id="0" name="Name">&quot;musFade&quot;</param>
                                     <param id="1" name="Parameter {n}">1</param>
                                 </action>
-                                <action id="-16" name="Wait" sid="646548303599525" type="System">
+                            </actions>
+                        </event-block>
+                        <event-block bookmark="1" sid="470967603318005">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="432517045118208" type="SansLegs">
+                                    <param id="0" name="Instance variable">HitAttempts</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">13</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="461290247573667" type="Function">
+                                    <param id="0" name="Name">&quot;RunAttack&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;sans_spare&quot;</param>
+                                </action>
+                                <action id="0" name="Call function" sid="516798594471424" type="Function">
+                                    <param id="0" name="Name">&quot;SansSweat&quot;</param>
+                                    <param id="1" name="Parameter {n}">2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="955955574039874" type="SansLegs">
+                                    <param id="0" name="Instance variable">NextAttack</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="511285127495572" type="Function">
+                                    <param id="0" name="Name">&quot;musFade&quot;</param>
+                                    <param id="1" name="Parameter {n}">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="186129499296874" type="System">
                                     <param id="0" name="Seconds">3.5</param>
                                 </action>
-                                <action id="0" name="Play" sid="727800852336010" type="Audio">
+                                <action id="22" name="Set paused" sid="715196724146794" type="Audio">
+                                    <param id="0" name="Tag">&quot;Music&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="666369212609192" type="Audio">
                                     <param id="0" name="Audio file">mus_toomuch</param>
                                     <param id="2" name="Loop">1</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;GenoAmb&quot;</param>
                                 </action>
-                                <action id="22" name="Set paused" sid="308887967528280" type="Audio">
-                                    <param id="0" name="Tag">&quot;Music&quot;</param>
-                                    <param id="1" name="State">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="988431232226110" type="System">
+                                <action id="-9" name="Set value" sid="616038062946489" type="System">
                                     <param id="0" name="Variable">musFade</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="770117868589323" type="System">
+                                <action id="-9" name="Set value" sid="448941915124717" type="System">
                                     <param id="0" name="Variable">musVol</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="918872500871859" type="System">
+                                <action id="-9" name="Set value" sid="866159585715035" type="System">
                                     <param id="0" name="Variable">musSpeed</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
