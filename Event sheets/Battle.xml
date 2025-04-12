@@ -14,6 +14,11 @@
         <event-block sid="6997419290205712">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="2981337075960627" type="System" />
+                <condition id="-14" name="Compare variable" sid="587016637840439" type="System">
+                    <param id="0" name="Variable">OpenedMainMenu</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="1" name="Set size" sid="3223444452095259" type="PlayerItems">
@@ -109,6 +114,16 @@
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Second value">&quot;FLOWEY&quot;</param>
                         </condition>
+                        <condition id="-8" name="Compare two values" sid="827558568617308" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;GOKU&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="311988922935074" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;KAKARO&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="9190566972510164" type="RPGText">
@@ -134,79 +149,111 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">&quot;PlayerName&quot;</param>
                         </condition>
-                        <condition id="-8" name="Compare two values" sid="524634372296797" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;FLOWEY&quot;</param>
-                        </condition>
                     </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="777009851632217" type="RPGText">
-                            <param id="0" name="Text">uppercase(Name) &amp; &quot; LV: &quot; &amp; Level</param>
-                        </action>
-                        <action id="-1" name="Set X" sid="460185515196252" type="RPGText">
-                            <param id="0" name="X">RPGText.X + 30</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="708621140886510" type="System">
-                            <param id="0" name="Variable">HP</param>
-                            <param id="1" name="Value">92</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="229046267498601" type="System">
-                            <param id="0" name="Variable">MaxHP</param>
-                            <param id="1" name="Value">92</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="976853951783064">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="291052052382346" type="RPGText">
-                            <param id="0" name="Instance variable">Name</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;PlayerName&quot;</param>
-                        </condition>
-                        <condition id="-8" name="Compare two values" sid="857397891636815" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;UDLRBA&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="163063725685528" type="RPGText">
-                            <param id="0" name="Text">uppercase(&quot;Cheater&quot;) &amp; &quot;  LV: &quot; &amp; Level</param>
-                        </action>
-                        <action id="-1" name="Set X" sid="736650776709511" type="RPGText">
-                            <param id="0" name="X">RPGText.X + 30</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="799340692571331" type="System">
-                            <param id="0" name="Variable">HP</param>
-                            <param id="1" name="Value">9999999999999999999999</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="391361658526410" type="System">
-                            <param id="0" name="Variable">MaxHP</param>
-                            <param id="1" name="Value">9999999999999999999999</param>
-                        </action>
-                        <action id="-16" name="Set opacity" sid="758644522987296" type="HP">
-                            <param id="0" name="Opacity">0</param>
-                        </action>
-                        <action id="-16" name="Set opacity" sid="185760050352729" type="KR">
-                            <param id="0" name="Opacity">0</param>
-                        </action>
-                        <action id="-16" name="Set opacity" sid="735344644669278" type="HPBarMask">
-                            <param id="0" name="Opacity">0</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
-                        <event-block sid="184707891474503">
+                        <event-block any="1" sid="625585154223332">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="444512544185459" type="BattleFont">
-                                    <param id="0" name="Instance variable">Name</param>
+                                <condition id="-8" name="Compare two values" sid="614838582145986" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;HP&quot;</param>
+                                    <param id="2" name="Second value">&quot;GOKU&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="331679004577647" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KAKARO&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-16" name="Set opacity" sid="800908685119134" type="BattleFont">
+                                <action id="0" name="Set text" sid="239183537133402" type="RPGText">
+                                    <param id="0" name="Text">uppercase(Name) &amp; &quot; LV: &quot; &amp; Level</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="881314063454157" type="RPGText">
+                                    <param id="0" name="X">RPGText.X + 30</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="738009993645179" type="System">
+                                    <param id="0" name="Variable">HP</param>
+                                    <param id="1" name="Value">999999999999</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="357736999798868" type="System">
+                                    <param id="0" name="Variable">MaxHP</param>
+                                    <param id="1" name="Value">999999999999</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="589218569213892">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="857397891636815" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;UDLRBA&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="163063725685528" type="RPGText">
+                                    <param id="0" name="Text">uppercase(&quot;Konami&quot;) &amp; &quot;  LV: &quot; &amp; Level</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="736650776709511" type="RPGText">
+                                    <param id="0" name="X">RPGText.X + 30</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="799340692571331" type="System">
+                                    <param id="0" name="Variable">HP</param>
+                                    <param id="1" name="Value">9999999999999999999999</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="391361658526410" type="System">
+                                    <param id="0" name="Variable">MaxHP</param>
+                                    <param id="1" name="Value">9999999999999999999999</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="758644522987296" type="HP">
                                     <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="185760050352729" type="KR">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="735344644669278" type="HPBarMask">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="184707891474503">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="444512544185459" type="BattleFont">
+                                            <param id="0" name="Instance variable">Name</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;HP&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Set opacity" sid="800908685119134" type="BattleFont">
+                                            <param id="0" name="Opacity">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="572131900296760">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="524634372296797" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;FLOWEY&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="777009851632217" type="RPGText">
+                                    <param id="0" name="Text">uppercase(Name) &amp; &quot; LV: &quot; &amp; Level</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="460185515196252" type="RPGText">
+                                    <param id="0" name="X">RPGText.X + 30</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="708621140886510" type="System">
+                                    <param id="0" name="Variable">HP</param>
+                                    <param id="1" name="Value">92</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="229046267498601" type="System">
+                                    <param id="0" name="Variable">MaxHP</param>
+                                    <param id="1" name="Value">92</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -629,6 +676,26 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="228949921927833">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="522544601047842" type="System" />
+                <condition id="-14" name="Compare variable" sid="601086605314285" type="System">
+                    <param id="0" name="Variable">OpenedMainMenu</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="106528009543694" type="System">
+                    <param id="0" name="Seconds">0.25</param>
+                </action>
+                <action id="33" name="Stop all" sid="280717528496168" type="Audio" />
+                <action id="0" name="Call function" sid="336222341341753" type="Function">
+                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="8304459325253301">
             <conditions>
@@ -1086,6 +1153,61 @@
                                                     <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Second value">&quot;CRINGE&quot;</param>
                                                 </condition>
+                                                <condition id="-8" name="Compare two values" sid="627341896304474" type="System">
+                                                    <param id="0" name="First value">uppercase(Name)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;FNF&quot;</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="121783839674891" type="System">
+                                                    <param id="0" name="First value">uppercase(Name)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;FNFBF&quot;</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="274195406527860" type="System">
+                                                    <param id="0" name="First value">uppercase(Name)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;FNFGF&quot;</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="611383243210036" type="System">
+                                                    <param id="0" name="First value">uppercase(Name)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;BFFNF&quot;</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="910593099732789" type="System">
+                                                    <param id="0" name="First value">uppercase(Name)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;GFFNF&quot;</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="497747889641227" type="System">
+                                                    <param id="0" name="First value">uppercase(Name)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;FAKER&quot;</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="709937776903795" type="System">
+                                                    <param id="0" name="First value">uppercase(Name)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;EXE&quot;</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="676931847626928" type="System">
+                                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;MOMMY&quot;</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="643122188584555" type="System">
+                                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;DADDY&quot;</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="745567977309499" type="System">
+                                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;MILF&quot;</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="976699378631005" type="System">
+                                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;DILF&quot;</param>
+                                                </condition>
                                             </conditions>
                                             <actions>
                                                 <action id="0" name="Call function" sid="800917210016112" type="Function">
@@ -1432,12 +1554,6 @@
                                 <action id="22" name="Set paused" sid="715196724146794" type="Audio">
                                     <param id="0" name="Tag">&quot;Music&quot;</param>
                                     <param id="1" name="State">0</param>
-                                </action>
-                                <action id="0" name="Play" sid="666369212609192" type="Audio">
-                                    <param id="0" name="Audio file">mus_toomuch</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;GenoAmb&quot;</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="616038062946489" type="System">
                                     <param id="0" name="Variable">musFade</param>
@@ -2058,7 +2174,7 @@
                                     <param id="1" name="Parameter {n}">&quot;Tired&quot;</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="472789542818442" type="SansHead">
-                                    <param id="0" name="Animation">&quot;TiredIdle&quot;</param>
+                                    <param id="0" name="Animation">&quot;Tired3&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -2267,23 +2383,6 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="409638296807966">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="523793993517557" type="System">
-                            <param id="0" name="Variable">UsedItem</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="762858804649688" type="Audio">
-                            <param id="0" name="Audio file">snd_wrongvictory</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;WinJingle&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="445438767800452">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="324090525126756" type="System">
@@ -2775,20 +2874,6 @@
                                 <action id="2" name="Stop" sid="1710816100879708" type="TargetChoice" />
                             </actions>
                         </event-block>
-                        <event-block sid="546948586848112">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="936234079237274" type="SansLegs">
-                                    <param id="0" name="Instance variable">HitAttempts</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">13</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="6" name="Stop" sid="994066272245028" type="Audio">
-                                    <param id="0" name="Tag">&quot;GenoAmb&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="913154247197781">
@@ -2872,20 +2957,6 @@
                                     <param id="1" name="Value">2</param>
                                 </action>
                                 <action id="2" name="Stop" sid="250582418809685" type="TargetChoice" />
-                            </actions>
-                        </event-block>
-                        <event-block sid="737320417690475">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="261601949190121" type="SansLegs">
-                                    <param id="0" name="Instance variable">HitAttempts</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">13</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="6" name="Stop" sid="610584069124158" type="Audio">
-                                    <param id="0" name="Tag">&quot;GenoAmb&quot;</param>
-                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -4295,7 +4366,7 @@
                                 <action id="-28" name="Set effect parameter" sid="1224258952403967" type="PlayerHeart">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">25</param>
+                                    <param id="2" name="Value">23.53</param>
                                 </action>
                                 <action id="-28" name="Set effect parameter" sid="9069255816298874" type="PlayerHeart">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
@@ -4318,6 +4389,10 @@
                         </action>
                         <action id="-2" name="Set Y" sid="2212084430791989" type="PlayerHeart">
                             <param id="0" name="Y">int(Function.Param(1))</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="564672882213108" type="BattleBackground">
+                            <param id="0" name="Animation">Function.Param(2)</param>
+                            <param id="1" name="From">1</param>
                         </action>
                         <action id="-15" name="Set visible" sid="884393851269895" type="PlayerHeart">
                             <param id="0" name="Visibility">1</param>

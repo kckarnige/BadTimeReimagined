@@ -173,6 +173,10 @@
                     <param id="0" name="Variable">UsedItem</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="-9" name="Set value" sid="795639606998957" type="System">
+                    <param id="0" name="Variable">OpenedMainMenu</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="304307819878449">
@@ -928,17 +932,17 @@
                                 <action id="-8" name="Set angle" sid="2501214630109601" type="PlayerHeart">
                                     <param id="0" name="Angle">90</param>
                                 </action>
-                                <action id="-28" name="Set effect parameter" sid="5348712262903138" type="PlayerHeart">
+                                <action id="-28" name="Set effect parameter" sid="280318405424329" type="PlayerHeart">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">0</param>
                                     <param id="2" name="Value">100</param>
                                 </action>
-                                <action id="-28" name="Set effect parameter" sid="3100769631086494" type="PlayerHeart">
+                                <action id="-28" name="Set effect parameter" sid="323937072427355" type="PlayerHeart">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">1</param>
                                     <param id="2" name="Value">0</param>
                                 </action>
-                                <action id="-28" name="Set effect parameter" sid="1761116705025522" type="PlayerHeart">
+                                <action id="-28" name="Set effect parameter" sid="304968347093798" type="PlayerHeart">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">2</param>
                                     <param id="2" name="Value">0</param>
@@ -1056,6 +1060,32 @@
                                             </actions>
                                         </event-block>
                                     </sub-events>
+                                </event-block>
+                                <event-block sid="682285618618790">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="390374341418365" type="System">
+                                            <param id="0" name="Variable">DevMode</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-28" name="Set effect parameter" sid="883505881039605" type="PlayerHeart">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="573900466089683" type="PlayerHeart">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">23.53</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="632493919210984" type="PlayerHeart">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">100</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>

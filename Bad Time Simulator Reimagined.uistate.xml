@@ -12,8 +12,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">BattleScreen</layout>
         <layout order="3">MainMenu</layout>
-        <event-sheet active="1" order="1">Battle</event-sheet>
-        <event-sheet order="2">InputManagement</event-sheet>
+        <event-sheet order="1">Battle</event-sheet>
+        <event-sheet active="1" order="2">InputManagement</event-sheet>
         <event-sheet order="4">Globals</event-sheet>
         <event-sheet order="5">BuildInfo</event-sheet>
         <event-sheet order="6">MainMenu</event-sheet>
@@ -23,6 +23,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="10">MusicFadeOut</event-sheet>
         <event-sheet order="11">RPGText</event-sheet>
         <event-sheet order="12">RainbowText</event-sheet>
+        <event-sheet order="13">Timeline</event-sheet>
+        <event-sheet order="14">AttackLoader</event-sheet>
+        <event-sheet order="15">PlayerNameQuote</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -83,7 +86,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SansTorso/" />
         <folder expanded="1" path="animation-folder/SpeechBubble/" />
         <folder expanded="1" path="animation-folder/SansPhaseIcon/" />
-        <folder expanded="1" path="animation-folder/SansShade/" />
         <folder expanded="1" path="animation-folder/GasterBlaster/" />
         <folder expanded="1" path="animation-folder/MenuBoneBottom/" />
         <folder expanded="1" path="animation-folder/MenuBoneLeft/" />

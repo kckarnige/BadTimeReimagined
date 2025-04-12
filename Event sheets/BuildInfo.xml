@@ -6,7 +6,7 @@
         <variable constant="0" name="buildType" sid="407825804870298" static="0" type="text">Alpha</variable>
         <variable constant="0" name="DesktopBuild" sid="767752196151469" static="0" type="number">1</variable>
         <variable constant="0" name="HideMouse" sid="344011919054341" static="0" type="number">0</variable>
-        <variable constant="0" name="DevMode" sid="433491871019591" static="0" type="number">0</variable>
+        <variable constant="0" name="DevMode" sid="433491871019591" static="0" type="number">1</variable>
         <variable constant="0" name="FSDown" sid="586505851043264" static="0" type="number">0</variable>
         <event-group description="" sid="463479059386579" title="Show Build Info" />
         <event-block sid="171781272408395">
@@ -64,36 +64,6 @@
             <actions>
                 <action id="-16" name="Set opacity" sid="706612543552518" type="DebugFont">
                     <param id="0" name="Opacity">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="336158639304998">
-            <conditions>
-                <condition id="-8" name="Compare two values" sid="834183248287593" type="System">
-                    <param id="0" name="First value">uppercase(Name)</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Second value">&quot;DEVBUG&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="834541142763072" type="System">
-                    <param id="0" name="Variable">DevMode</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="636323771512168">
-            <conditions>
-                <condition id="-8" name="Compare two values" sid="939143998940880" type="System">
-                    <param id="0" name="First value">uppercase(Name)</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Second value">&quot;DEVNOT&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="706883156518169" type="System">
-                    <param id="0" name="Variable">DevMode</param>
-                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
