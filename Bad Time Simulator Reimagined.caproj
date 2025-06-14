@@ -501,33 +501,18 @@
                         <frame duration="25" hotspotX="0.5" hotspotY="1">
                             <image-point name="Sweat" x="0.5" y="0" />
                             <collision-poly>
-                                <point x="0.125" y="0.133333" />
-                                <point x="0.5" y="0" />
-                                <point x="0.875" y="0.133333" />
                                 <point x="0.96875" y="0.5" />
                                 <point x="0.875" y="0.866667" />
                                 <point x="0.5" y="1" />
                                 <point x="0.125" y="0.866667" />
                                 <point x="0.03125" y="0.5" />
+                                <point x="0.125" y="0.133333" />
+                                <point x="0.5" y="0" />
+                                <point x="0.875" y="0.133333" />
                             </collision-poly>
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="LookLeft" pingpong="0" repeatcount="1" repeatto="0" sid="4388466239935075" speed="10">
-                        <frame duration="15" hotspotX="0.5" hotspotY="1">
-                            <image-point name="Sweat" x="0.5" y="0" />
-                        </frame>
-                    </animation>
-                    <animation framecount="1" loop="0" name="LookLeftChuckle" pingpong="0" repeatcount="1" repeatto="0" sid="875286363864237" speed="10">
-                        <frame duration="15" hotspotX="0.5" hotspotY="1">
-                            <image-point name="Sweat" x="0.5" y="0" />
-                        </frame>
-                    </animation>
-                    <animation framecount="1" loop="0" name="ClosedEyes" pingpong="0" repeatcount="1" repeatto="0" sid="8089043188246127" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="1">
-                            <image-point name="Sweat" x="0.5" y="0" />
-                        </frame>
-                    </animation>
-                    <animation framecount="1" loop="0" name="Wink" pingpong="0" repeatcount="1" repeatto="0" sid="6457042623121455" speed="5">
                         <frame duration="15" hotspotX="0.5" hotspotY="1">
                             <image-point name="Sweat" x="0.5" y="0" />
                             <collision-poly>
@@ -538,6 +523,33 @@
                             </collision-poly>
                         </frame>
                     </animation>
+                    <animation framecount="1" loop="0" name="LookLeftChuckle" pingpong="0" repeatcount="1" repeatto="0" sid="875286363864237" speed="10">
+                        <frame duration="15" hotspotX="0.5" hotspotY="1">
+                            <image-point name="Sweat" x="0.5" y="0" />
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="ClosedEyes" pingpong="0" repeatcount="1" repeatto="0" sid="8089043188246127" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <image-point name="Sweat" x="0.5" y="0" />
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Wink" pingpong="0" repeatcount="1" repeatto="0" sid="6457042623121455" speed="5">
+                        <frame duration="15" hotspotX="0.5" hotspotY="1">
+                            <image-point name="Sweat" x="0.5" y="0" />
+                        </frame>
+                    </animation>
                     <animation framecount="1" loop="0" name="NoEyes" pingpong="0" repeatcount="1" repeatto="0" sid="2373656401037775" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="1">
                             <image-point name="Sweat" x="0.5" y="0" />
@@ -546,31 +558,55 @@
                     <animation framecount="2" loop="1" name="BlueEye" pingpong="0" repeatcount="1" repeatto="0" sid="4492125680738175" speed="28">
                         <frame duration="1" hotspotX="0.5" hotspotY="1">
                             <image-point name="Sweat" x="0.5" y="0" />
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0.5" hotspotY="1">
                             <image-point name="Sweat" x="0.5" y="0" />
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
                         </frame>
                     </animation>
                     <animation framecount="2" loop="1" name="BlueWink" pingpong="0" repeatcount="1" repeatto="0" sid="943129627530776" speed="28">
                         <frame duration="1" hotspotX="0.5" hotspotY="1">
                             <image-point name="Sweat" x="0.5" y="0" />
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0.5" hotspotY="1">
                             <image-point name="Sweat" x="0.5" y="0" />
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Tired1" pingpong="0" repeatcount="1" repeatto="0" sid="9055351961421601" speed="5">
                         <frame duration="25" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_sansb_face_2.png">
                             <image-point name="Sweat" x="0.5" y="0" />
                             <collision-poly>
-                                <point x="0.125" y="0.133333" />
-                                <point x="0.5" y="0" />
-                                <point x="0.875" y="0.133333" />
                                 <point x="0.96875" y="0.5" />
                                 <point x="0.875" y="0.866667" />
                                 <point x="0.5" y="1" />
                                 <point x="0.125" y="0.866667" />
                                 <point x="0.03125" y="0.5" />
+                                <point x="0.125" y="0.133333" />
+                                <point x="0.5" y="0" />
+                                <point x="0.875" y="0.133333" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -578,14 +614,14 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_sansb_face_9.png">
                             <image-point name="Sweat" x="0.5" y="0" />
                             <collision-poly>
-                                <point x="0.125" y="0.133333" />
-                                <point x="0.5" y="0" />
-                                <point x="0.875" y="0.133333" />
                                 <point x="0.96875" y="0.5" />
                                 <point x="0.875" y="0.866667" />
                                 <point x="0.5" y="1" />
                                 <point x="0.125" y="0.866667" />
                                 <point x="0.03125" y="0.5" />
+                                <point x="0.125" y="0.133333" />
+                                <point x="0.5" y="0" />
+                                <point x="0.875" y="0.133333" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -593,14 +629,14 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="1">
                             <image-point name="Sweat" x="0.5" y="0" />
                             <collision-poly>
-                                <point x="0.125" y="0.133333" />
-                                <point x="0.5" y="0" />
-                                <point x="0.875" y="0.133333" />
                                 <point x="0.96875" y="0.5" />
                                 <point x="0.875" y="0.866667" />
                                 <point x="0.5" y="1" />
                                 <point x="0.125" y="0.866667" />
                                 <point x="0.03125" y="0.5" />
+                                <point x="0.125" y="0.133333" />
+                                <point x="0.5" y="0" />
+                                <point x="0.875" y="0.133333" />
                             </collision-poly>
                         </frame>
                     </animation>
