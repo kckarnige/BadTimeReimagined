@@ -1422,6 +1422,10 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="809140242372622" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
                 </animation>
+                <animation framecount="2" loop="1" name="MenuModeStart" pingpong="0" repeatcount="1" repeatto="0" sid="202735376238798" speed="28">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
                 <animation framecount="1" loop="0" name="MenuModeNormal" pingpong="0" repeatcount="1" repeatto="0" sid="662920944699968" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
                 </animation>
@@ -1443,15 +1447,15 @@
                 <animation framecount="1" loop="0" name="MenuEndless1" pingpong="0" repeatcount="1" repeatto="0" sid="590195023979166" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
                 </animation>
-                <animation framecount="1" loop="0" name="CutestPlaceholder" pingpong="0" repeatcount="1" repeatto="0" sid="850781183514612" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
-                </animation>
             </animation-folder>
         </object-type>
         <object-type name="MenuImageFrame" sid="921318135183984">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="312545795075523" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="Subtle" pingpong="0" repeatcount="1" repeatto="0" sid="480818050302154" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
                 </animation>
             </animation-folder>

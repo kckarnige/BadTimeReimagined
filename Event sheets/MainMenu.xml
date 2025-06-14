@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MainMenu</name>
     <events>
+        <variable constant="0" name="BattleStart" sid="473247733952513" static="0" type="number">0</variable>
         <variable constant="0" name="SingleATKMenu" sid="398603586311008" static="0" type="number">0</variable>
         <include>RainbowText</include>
         <include>BuildInfo</include>
@@ -144,6 +145,10 @@
                 <condition id="-2" name="On start of layout" sid="301026708660067" type="System" />
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="589689325315470" type="System">
+                    <param id="0" name="Variable">BattleStart</param>
+                    <param id="1" name="Value">0</param>
+                </action>
                 <action id="-3" name="Create object" sid="944495815567582" type="System">
                     <param id="0" name="Object to create">Text</param>
                     <param id="1" name="Layer">0</param>
@@ -346,8 +351,18 @@
                 <condition id="-3" name="On end of layout" sid="109685306810469" type="System" />
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="305313606613724" type="System">
+                    <param id="0" name="Variable">BattleStart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="6" name="Stop" sid="894972263306727" type="Audio">
                     <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="435785041701136" type="Audio">
+                    <param id="0" name="Tag">&quot;BoneMusic&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="563325877997669" type="Audio">
+                    <param id="0" name="Tag">&quot;GayMusic&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -667,15 +682,109 @@
                             <param id="0" name="Name">&quot;MenuModeNormal&quot;</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="6921132940594369" type="System">
-                            <param id="0" name="Layout">BattleScreen</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="707200084046605" type="System">
-                            <param id="0" name="Variable">SimulatorMode</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="722972318225476">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="543857289589451" type="System">
+                                    <param id="0" name="First value">DevMode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="499634082340972" type="System">
+                                    <param id="0" name="Variable">BattleStart</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="621933269338918" type="PlayerName" />
+                                <action id="-9" name="Destroy" sid="718932801598345" type="MenuItem" />
+                                <action id="-9" name="Destroy" sid="182614323884939" type="DefaultFont" />
+                                <action id="-9" name="Destroy" sid="773758641673712" type="BattleFont" />
+                                <action id="6" name="Stop" sid="744614964920286" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="141110845609369" type="Audio">
+                                    <param id="0" name="Tag">&quot;BoneMusic&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="955469396692054" type="Audio">
+                                    <param id="0" name="Tag">&quot;GayMusic&quot;</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="164047397231634" type="PlayerHeart" />
+                                <action id="0" name="Play" sid="354958910852668" type="Audio">
+                                    <param id="0" name="Audio file">Flash</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="642605454158164" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="0" name="Play" sid="946480613682147" type="Audio">
+                                    <param id="0" name="Audio file">Ding</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="675935799413605" type="MenuImage">
+                                    <param id="0" name="Animation">&quot;MenuModeStart&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="850893109599490" type="MenuImageFrame">
+                                    <param id="0" name="Animation">&quot;Subtle&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="455790515623133" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="565588339044502" type="MenuImage" />
+                                <action id="-9" name="Destroy" sid="809647908052210" type="MenuImageFrame" />
+                                <action id="0" name="Play" sid="943845851369653" type="Audio">
+                                    <param id="0" name="Audio file">Flash</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="385386861254366" type="System">
+                                    <param id="0" name="Seconds">2.0</param>
+                                </action>
+                                <action id="0" name="Play" sid="130802446291515" type="Audio">
+                                    <param id="0" name="Audio file">Flash</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="6921132940594369" type="System">
+                                    <param id="0" name="Layout">BattleScreen</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="707200084046605" type="System">
+                                    <param id="0" name="Variable">SimulatorMode</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="726420343017554" type="System">
+                                    <param id="0" name="Seconds">2.0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="248749892111946">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="134275621987766" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="576907504352836" type="System">
+                                    <param id="0" name="Variable">BattleStart</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="240899002830718" type="System">
+                                    <param id="0" name="Layout">BattleScreen</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="969037334719601" type="System">
+                                    <param id="0" name="Variable">SimulatorMode</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="8566872012264114">
                     <conditions>
@@ -1638,6 +1747,11 @@
                     <sub-events>
                         <event-block sid="632339889403895">
                             <conditions>
+                                <condition id="-14" name="Compare variable" sid="836630428360164" type="System">
+                                    <param id="0" name="Variable">BattleStart</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                                 <condition id="5" inverted="1" name="Is tag playing" sid="276643300232146" type="Audio">
                                     <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
                                 </condition>
@@ -1720,6 +1834,11 @@
                             <sub-events>
                                 <event-block sid="705855464714544">
                                     <conditions>
+                                        <condition id="-14" name="Compare variable" sid="796138998525422" type="System">
+                                            <param id="0" name="Variable">BattleStart</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
                                         <condition id="5" inverted="1" name="Is tag playing" sid="622554837385992" type="Audio">
                                             <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
                                         </condition>

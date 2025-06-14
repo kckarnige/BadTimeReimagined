@@ -3,10 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>BuildInfo</name>
     <events>
-        <variable constant="0" name="buildType" sid="407825804870298" static="0" type="text">Alpha</variable>
+        <variable constant="0" name="buildType" sid="407825804870298" static="0" type="text">Beta</variable>
         <variable constant="0" name="DesktopBuild" sid="767752196151469" static="0" type="number">1</variable>
         <variable constant="0" name="HideMouse" sid="344011919054341" static="0" type="number">0</variable>
-        <variable constant="0" name="DevMode" sid="433491871019591" static="0" type="number">1</variable>
         <variable constant="0" name="FSDown" sid="586505851043264" static="0" type="number">0</variable>
         <event-group description="" sid="463479059386579" title="Show Build Info" />
         <event-block sid="171781272408395">

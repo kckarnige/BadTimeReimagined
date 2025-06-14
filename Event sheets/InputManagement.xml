@@ -971,6 +971,46 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="126905255648145">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="319821489511904" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;FIXME&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="972294794402653" type="System">
+                            <param id="0" name="Variable">DevMode</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="659231571008737" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;Dev mode enabled!&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="521603716420998" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="864983349406973" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="180834343405961" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="535013907624460" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="692924007012467" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="893865017905021">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="633562472922329" type="System">
@@ -1079,12 +1119,17 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="810700605304733">
+                <event-block any="1" sid="810700605304733">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="929088627820393" type="System">
                             <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;KRIS&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="624223076017351" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;KNIGHT&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1222,7 +1267,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="161612239946506" type="PlayerNameFont">
-                            <param id="0" name="Text">&quot;Generic.&quot;</param>
+                            <param id="0" name="Text">&quot;twenty one pilots: Stressed Out&quot;</param>
                         </action>
                         <action id="-28" name="Set effect parameter" sid="579375809495269" type="PlayerNameFont">
                             <param id="0" name="Effect">&quot;Tint&quot;</param>
@@ -1571,6 +1616,16 @@
                             <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;NIGG&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="935287822145272" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;SLU&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="662054680866136" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;RACIS&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
