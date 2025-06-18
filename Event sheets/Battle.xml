@@ -451,14 +451,6 @@
                             <param id="0" name="Animation">&quot;Deltarune&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="115370762769562" type="HP">
-                            <param id="0" name="Animation">&quot;Deltarune&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="250850854838513" type="KR">
-                            <param id="0" name="Animation">&quot;Deltarune&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
                         <action id="-28" name="Set effect parameter" sid="688205724736240" type="UIBorderStuff">
                             <param id="0" name="Effect">&quot;Tint&quot;</param>
                             <param id="1" name="Parameter index">0</param>
@@ -687,13 +679,28 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-16" name="Wait" sid="106528009543694" type="System">
-                    <param id="0" name="Seconds">0.25</param>
+                <action id="-9" name="Set value" sid="645082739313090" type="System">
+                    <param id="0" name="Variable">Dead</param>
+                    <param id="1" name="Value">1</param>
                 </action>
-                <action id="33" name="Stop all" sid="280717528496168" type="Audio" />
-                <action id="0" name="Call function" sid="336222341341753" type="Function">
-                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                <action id="0" name="Call function" sid="214340130934232" type="Function">
+                    <param id="0" name="Name">&quot;BlackScreen&quot;</param>
+                    <param id="1" name="Parameter {n}">1</param>
+                </action>
+                <action id="0" name="Call function" sid="809076898661568" type="Function">
+                    <param id="0" name="Name">&quot;TLStop&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="33" name="Stop all" sid="551295693367208" type="Audio" />
+                <action id="-16" name="Wait" sid="106528009543694" type="System">
+                    <param id="0" name="Seconds">0.01</param>
+                </action>
+                <action id="33" name="Stop all" sid="715201878528752" type="Audio" />
+                <action id="-9" name="Destroy" sid="838013283048817" type="AttackSprite" />
+                <action id="-9" name="Destroy" sid="535374631316727" type="AttackTiled" />
+                <action id="-9" name="Destroy" sid="909914601114065" type="Attack9Patch" />
+                <action id="-25" name="Go to layout (by name)" sid="915354049434155" type="System">
+                    <param id="0" name="Layout">&quot;MainMenu&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -757,7 +764,11 @@
                     <param id="0" name="Name">&quot;AttackLoadFinished&quot;</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-15" name="Set visible" sid="614860724916602" type="KR">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="2196839888414716">
                     <conditions>
@@ -2205,32 +2216,6 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="431423971298114">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="426827410151547" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;KRIS&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-28" name="Set effect parameter" sid="786383369320314" type="CombatZone">
-                            <param id="0" name="Effect">&quot;Tint&quot;</param>
-                            <param id="1" name="Parameter index">0</param>
-                            <param id="2" name="Value">100</param>
-                        </action>
-                        <action id="-28" name="Set effect parameter" sid="194048704084259" type="CombatZone">
-                            <param id="0" name="Effect">&quot;Tint&quot;</param>
-                            <param id="1" name="Parameter index">1</param>
-                            <param id="2" name="Value">100</param>
-                        </action>
-                        <action id="-28" name="Set effect parameter" sid="576520275853774" type="CombatZone">
-                            <param id="0" name="Effect">&quot;Tint&quot;</param>
-                            <param id="1" name="Parameter index">2</param>
-                            <param id="2" name="Value">100</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="111265932296528">
                     <conditions>
                         <condition id="-7" inverted="1" name="Compare instance variable" sid="346982673212395" type="SansLegs">
@@ -2569,7 +2554,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="5873472645475589" title="BattleMenu">
+        <event-group bookmark="1" description="" sid="5873472645475589" title="BattleMenu">
             <sub-events>
                 <variable constant="0" name="MenuState" sid="5359025861573384" static="1" type="number">0</variable>
                 <event-block sid="7182427324329722">
@@ -3355,7 +3340,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="7697488528991464" type="DefaultFont">
                             <param id="0" name="Instance variable">FullText</param>
-                            <param id="1" name="Value">&quot;* Can&apos;t keep dodging forever.&quot; &amp; newline &amp; &quot;* Keep attacking. =)&quot;</param>
+                            <param id="1" name="Value">&quot;* Can&apos;t keep dodging forever.&quot; &amp; newline &amp; &quot;* Keep attacking.&quot;</param>
                         </action>
                         <action id="-10" name="Set value" sid="1065982881486434" type="DefaultFont">
                             <param id="0" name="Instance variable">Name</param>
@@ -3843,6 +3828,37 @@
                             <param id="0" name="Scale">1.6</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="717913091466302">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="619188769984501" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KRIS&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="683182104632843" type="System">
+                                    <param id="0" name="Seconds">0.15</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="125751494077858" type="CombatZone">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="732051114896488" type="CombatZone">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="159761223298927" type="CombatZone">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="8459416245762627">
                     <conditions>
@@ -9146,6 +9162,9 @@
                         </action>
                         <action id="17" name="Execute Javascript" sid="463627145686254" type="Browser">
                             <param id="0" name="Javascript">&quot;navigator.getGamepads()[0].vibrationActuator.playEffect(&apos;dual-rumble&apos;, {&#x0D;&#x0A;  startDelay: 0,&#x0D;&#x0A;  duration: 100,&#x0D;&#x0A;  weakMagnitude: 0.5,&#x0D;&#x0A;  strongMagnitude: 0.5,&#x0D;&#x0A;});&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="980261892076376" type="KR">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
                     <sub-events>

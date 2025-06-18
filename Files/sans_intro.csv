@@ -1,4 +1,4 @@
-0,BattleBackground,Visible,,,,,,,
+0,BattleBackground,Hidden,,,,,,,
 0,Sound,ChurchBell,,ChurchBell,,,,,
 0,SansAnimation,Tired,,,,,,,
 0,SansHead,ClosedEyes,,,,,,,
@@ -25,7 +25,7 @@
 0,SansHead,NoEyes,,,,,,,
 0.4,Sound,GasterBlaster,1.4,,,,,,
 0.4,SineBones,20,-24,360,25,,,,
-1.1,SansAnimation,Tired,,,,,,,
+1.1,SansAnimation,,,,,,,,
 0,GasterBlaster,1,0,0,189,246,0,0.333,0.26666
 0,GasterBlaster,1,0,0,259,166,90,0.333,0.26666
 0,GasterBlaster,1,640,480,449,366,180,0.333,0.26666
@@ -42,7 +42,6 @@
 0,GasterBlaster,2,640,240,499,306,180,0.666,0.5
 3,SansHead,Default,,,,,,,
 0,SansTorso,Default,,,,,,,
-0,BattleBackground,FadeToVisible,,,,,,,
 0,SansText,what's with the face?,,,,,,,
 0,SansHead,ClosedEyes,,,,,,,
 0,SansText,that expression...,,,,,,,
@@ -52,6 +51,7 @@
 0,BlackScreen,1,,,,,,,
 0,BattleBackground,Visible,,,,,,,
 0,Sound,Flash,,,,,,,
+0,BattleBackground,Visible,,,,,,,
 1,BlackScreen,0,,,,,,,
 0,Sound,Flash,,,,,,,
 0,EndAttack,,,,,,,,

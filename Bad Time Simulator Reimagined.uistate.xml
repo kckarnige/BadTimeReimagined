@@ -10,13 +10,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">BattleScreen</layout>
+        <layout order="0">BattleScreen</layout>
         <layout order="3">MainMenu</layout>
         <event-sheet order="1">Battle</event-sheet>
         <event-sheet order="2">InputManagement</event-sheet>
         <event-sheet order="4">Globals</event-sheet>
         <event-sheet order="5">BuildInfo</event-sheet>
-        <event-sheet order="6">MainMenu</event-sheet>
+        <event-sheet active="1" order="6">MainMenu</event-sheet>
         <event-sheet order="7">Menus</event-sheet>
         <event-sheet order="8">Fonts</event-sheet>
         <event-sheet order="9">Items</event-sheet>
@@ -54,6 +54,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Timeline/" />
         <folder expanded="1" path="object-folder/TouchUI/" />
         <folder expanded="1" path="object-folder/Fonts/" />
+        <folder expanded="1" path="object-folder/FX/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -92,14 +93,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/TouchA/" />
         <folder expanded="1" path="animation-folder/TouchB/" />
         <folder expanded="1" path="animation-folder/TouchDPad/" />
+        <folder expanded="1" path="animation-folder/MenuImageFrame/" />
+        <folder expanded="1" path="animation-folder/MenuImage/" />
         <folder expanded="1" path="animation-folder/BattleBackground/" />
         <folder expanded="1" path="animation-folder/PlayerHeart/" />
         <folder expanded="1" path="animation-folder/MenuItem/" />
         <folder expanded="1" path="animation-folder/HeartShard/" />
         <folder expanded="1" path="animation-folder/PlayerHitbox/" />
         <folder expanded="1" path="animation-folder/Potassium/" />
-        <folder expanded="1" path="animation-folder/MenuImage/" />
-        <folder expanded="1" path="animation-folder/MenuImageFrame/" />
         <folder expanded="1" path="animation-folder/PlayerHeartSplit/" />
     </folders-expanded>
 </c2uistate>

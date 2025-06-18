@@ -138,6 +138,9 @@
                     <param id="0" name="Variable">Name</param>
                     <param id="1" name="Value">LocalStorage.ItemValue</param>
                 </action>
+                <action id="0" name="Set text" sid="568390407190829" type="PlayerName">
+                    <param id="0" name="Text">LocalStorage.ItemValue</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="194677073697328">
@@ -1364,7 +1367,7 @@
                     <param id="0" name="Visibility">0</param>
                 </action>
                 <action id="17" name="Execute Javascript" sid="128426260259838" type="Browser">
-                    <param id="0" name="Javascript">&quot;location.href = &apos;https://github.com/kckarnige/BadTimeRevamped/releases&apos;&quot;</param>
+                    <param id="0" name="Javascript">&quot;location.href = &apos;https://gamejolt.com/games/badtimesimre/694456&apos;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -1732,6 +1735,61 @@
         </event-group>
         <event-group description="" sid="824280973500859" title="If no funny music">
             <sub-events>
+                <event-block sid="160160501335265">
+                    <conditions>
+                        <condition id="0" name="On function" sid="976602545658131" type="Function">
+                            <param id="0" name="Name">&quot;PlayMenuMusic&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="311242762025742" type="System">
+                            <param id="0" name="Variable">BattleStart</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="199429872222747">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="202199606252695" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KRIS&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="933480594007614" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="447723033794935" type="Audio">
+                                    <param id="0" name="Audio file">delta_menu</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="279403143509164">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="953330377188290" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KRIS&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="955459555543136" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="179200743767139" type="Audio">
+                                    <param id="0" name="Audio file">mus_options_fall</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="583580484168575">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="340636201023407" type="System">
@@ -1766,11 +1824,9 @@
                                 <action id="6" name="Stop" sid="463938650806368" type="Audio">
                                     <param id="0" name="Tag">&quot;GayMusic&quot;</param>
                                 </action>
-                                <action id="0" name="Play" sid="168992003699802" type="Audio">
-                                    <param id="0" name="Audio file">mus_options_fall</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
+                                <action id="0" name="Call function" sid="464631221310284" type="Function">
+                                    <param id="0" name="Name">&quot;PlayMenuMusic&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1847,17 +1903,15 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="6" name="Stop" sid="794367200907076" type="Audio">
-                                            <param id="0" name="Tag">&quot;GayMusic&quot;</param>
-                                        </action>
                                         <action id="6" name="Stop" sid="691902085919983" type="Audio">
                                             <param id="0" name="Tag">&quot;BoneMusic&quot;</param>
                                         </action>
-                                        <action id="0" name="Play" sid="954435032248882" type="Audio">
-                                            <param id="0" name="Audio file">mus_options_fall</param>
-                                            <param id="2" name="Loop">1</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
+                                        <action id="6" name="Stop" sid="794367200907076" type="Audio">
+                                            <param id="0" name="Tag">&quot;GayMusic&quot;</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="949321615751531" type="Function">
+                                            <param id="0" name="Name">&quot;PlayMenuMusic&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
