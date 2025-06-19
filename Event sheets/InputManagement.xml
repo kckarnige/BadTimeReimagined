@@ -1250,10 +1250,6 @@
                         <action id="2" name="Set scale" sid="264382854851604" type="PlayerNameFont">
                             <param id="0" name="Scale">2</param>
                         </action>
-                        <action id="-9" name="Set value" sid="720971716200941" type="System">
-                            <param id="0" name="Variable">Level</param>
-                            <param id="1" name="Value">18</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="449735336396224">
@@ -1790,39 +1786,49 @@
                             <param id="2" name="Second value">&quot;CRINGE&quot;</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="248175428711052" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;FNF&quot;</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="625319151904123" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;FNFBF&quot;</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="469452357502315" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;FNFGF&quot;</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="108346592946653" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;BFFNF&quot;</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="709462150069202" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;GFFNF&quot;</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="487295161270231" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;FAKER&quot;</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="543300144887847" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;EXE&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="627212813188073" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;POPPY&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="635099317996802" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;HUGGY&quot;</param>
                         </condition>
                     </conditions>
                     <actions>

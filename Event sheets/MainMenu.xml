@@ -1524,25 +1524,6 @@
                     <param id="2" name="X">0</param>
                     <param id="3" name="Y">116</param>
                 </action>
-                <action id="-7" name="Set size" sid="622945318361140" type="DefaultFont">
-                    <param id="0" name="Width">640</param>
-                    <param id="1" name="Height">64</param>
-                </action>
-                <action id="2" name="Set scale" sid="633377778543932" type="DefaultFont">
-                    <param id="0" name="Scale">1</param>
-                </action>
-                <action id="0" name="Set text" sid="966640849772923" type="DefaultFont">
-                    <param id="0" name="Text">&quot;Saster - [UNAVAILABLE MEGALOVANIA COVER]&quot;</param>
-                </action>
-                <action id="7" name="Set horizontal alignment" sid="127953542871456" type="DefaultFont">
-                    <param id="0" name="Horizontal alignment">1</param>
-                </action>
-                <action id="-3" name="Create object" sid="310399577637037" type="System">
-                    <param id="0" name="Object to create">DefaultFont</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">0</param>
-                    <param id="3" name="Y">134</param>
-                </action>
                 <action id="-7" name="Set size" sid="843096891443471" type="DefaultFont">
                     <param id="0" name="Width">640</param>
                     <param id="1" name="Height">64</param>
@@ -1551,16 +1532,16 @@
                     <param id="0" name="Scale">1</param>
                 </action>
                 <action id="0" name="Set text" sid="835504810198756" type="DefaultFont">
-                    <param id="0" name="Text">&quot;Toby Fox - UNDERTALE, Almost every asset, &apos;&apos;Uwa!! So Temperate&apos;&apos; (Main Menu Music)&quot;</param>
+                    <param id="0" name="Text">&quot;Toby Fox - UNDERTALE, DELTARUNE, and almost every asset used&quot;</param>
                 </action>
                 <action id="7" name="Set horizontal alignment" sid="383143580936427" type="DefaultFont">
                     <param id="0" name="Horizontal alignment">1</param>
                 </action>
-                <action id="-3" name="Create object" sid="743148988315052" type="System">
+                <action id="-3" name="Create object" sid="310399577637037" type="System">
                     <param id="0" name="Object to create">DefaultFont</param>
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="X">0</param>
-                    <param id="3" name="Y">152</param>
+                    <param id="3" name="Y">134</param>
                 </action>
                 <action id="-7" name="Set size" sid="563694034609797" type="DefaultFont">
                     <param id="0" name="Width">640</param>
@@ -1570,16 +1551,16 @@
                     <param id="0" name="Scale">1</param>
                 </action>
                 <action id="0" name="Set text" sid="233125654596147" type="DefaultFont">
-                    <param id="0" name="Text">&quot;Nintendo - Font used for battle UI (EarthBound Debug)&quot;</param>
+                    <param id="0" name="Text">&quot;HAL Lab. Inc. - EarthBound Debug Font (Used for battle UI)&quot;</param>
                 </action>
                 <action id="7" name="Set horizontal alignment" sid="448023363412444" type="DefaultFont">
                     <param id="0" name="Horizontal alignment">1</param>
                 </action>
-                <action id="-3" name="Create object" sid="534637476827466" type="System">
+                <action id="-3" name="Create object" sid="743148988315052" type="System">
                     <param id="0" name="Object to create">DefaultFont</param>
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="X">0</param>
-                    <param id="3" name="Y">170</param>
+                    <param id="3" name="Y">152</param>
                 </action>
                 <action id="-7" name="Set size" sid="511088648640217" type="DefaultFont">
                     <param id="0" name="Width">640</param>

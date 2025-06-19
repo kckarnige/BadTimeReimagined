@@ -132,7 +132,7 @@
                         <character-width>6</character-width>
                         <character-height>6</character-height>
                         <character-set> !&quot;#$%&amp;&apos;()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_</character-set>
-                        <text>CHARA</text>
+                        <text>&quot;CHARA&quot;</text>
                         <scale>3</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -175,7 +175,7 @@
                         <x>38</x>
                         <y>409</y>
                         <z>0</z>
-                        <width>123.52583313</width>
+                        <width>148</width>
                         <height>20</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -314,7 +314,7 @@
                         <character-width>6</character-width>
                         <character-height>6</character-height>
                         <character-set> !&quot;#$%&amp;&apos;()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_</character-set>
-                        <text>LV19</text>
+                        <text>LV:19</text>
                         <scale>3</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -357,7 +357,7 @@
                         <x>166</x>
                         <y>409</y>
                         <z>0</z>
-                        <width>102.685821533</width>
+                        <width>104</width>
                         <height>20</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
