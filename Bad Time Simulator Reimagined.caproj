@@ -346,12 +346,12 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220260722760225" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kayos\Desktop\hpoverlay.png">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kayos\Desktop\hpoverlay.png">
                             <image-point name="Imagepoint 1" x="0" y="0" />
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Deltarune" pingpong="0" repeatcount="1" repeatto="0" sid="765389941268984" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
                             <image-point name="Imagepoint 1" x="0" y="0" />
                         </frame>
                     </animation>
@@ -472,6 +472,14 @@
                         <frame duration="1" hotspotX="7.8125" hotspotY="7.8125" />
                     </animation>
                 </animation-folder>
+            </object-type>
+            <object-type name="HPMask" sid="622583697951650">
+                <plugin id="NinePatch" />
+                <texture />
+            </object-type>
+            <object-type name="HPMaskDR" sid="815241581417454">
+                <plugin id="NinePatch" />
+                <texture />
             </object-type>
         </object-folder>
         <object-folder name="Enemies">
@@ -1756,6 +1764,7 @@
         <file name="mus_leave.ogg" />
         <file name="mus_options_winter.ogg" />
         <file name="delta_menu.ogg" />
+        <file name="mus_musicbox.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

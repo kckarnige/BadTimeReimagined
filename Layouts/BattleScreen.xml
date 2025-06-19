@@ -29,15 +29,56 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="UIBorder" uid="82">
+                    <properties>
+                        <left-margin>8</left-margin>
+                        <right-margin>8</right-margin>
+                        <top-margin>8</top-margin>
+                        <bottom-margin>8</bottom-margin>
+                        <edges>Stretch</edges>
+                        <fill>Stretch</fill>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                        <seams>Overlap</seams>
+                    </properties>
+                    <instance-variables>
+                        <TargetLeft>32</TargetLeft>
+                        <TargetTop>250</TargetTop>
+                        <TargetRight>608</TargetRight>
+                        <TargetBottom>390</TargetBottom>
+                    </instance-variables>
+                    <effect-instances>
+                        <effect-instance type="Tint">
+                            <parameters>
+                                <blue>1</blue>
+                                <green>1</green>
+                                <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>26</x>
+                        <y>404</y>
+                        <z>0</z>
+                        <width>588</width>
+                        <height>74</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="BattleFont" uid="28">
                     <properties>
                         <character-width>6</character-width>
                         <character-height>6</character-height>
                         <character-set> !&quot;#$%&amp;&apos;()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_</character-set>
-                        <text>92 / 92</text>
+                        <text>92/92</text>
                         <scale>3</scale>
                         <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Left</horizontal-alignment>
+                        <horizontal-alignment>Right</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
@@ -74,8 +115,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>448</x>
-                        <y>402</y>
+                        <x>478</x>
+                        <y>409</y>
                         <z>0</z>
                         <width>128</width>
                         <height>20</height>
@@ -91,7 +132,7 @@
                         <character-width>6</character-width>
                         <character-height>6</character-height>
                         <character-set> !&quot;#$%&amp;&apos;()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_</character-set>
-                        <text>CHARA LV19</text>
+                        <text>CHARA</text>
                         <scale>3</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -131,10 +172,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>64</x>
-                        <y>402</y>
+                        <x>38</x>
+                        <y>409</y>
                         <z>0</z>
-                        <width>355</width>
+                        <width>123.52583313</width>
                         <height>20</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -153,8 +194,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>274</x>
-                        <y>416</y>
+                        <x>353</x>
+                        <y>422</y>
                         <z>0</z>
                         <width>23</width>
                         <height>10</height>
@@ -184,8 +225,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>418</x>
-                        <y>420</y>
+                        <x>487</x>
+                        <y>430</y>
                         <z>0</z>
                         <width>23</width>
                         <height>10</height>
@@ -231,8 +272,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>805.837158203</x>
-                        <y>585.262268066</y>
+                        <x>725.203186035</x>
+                        <y>676.30090332</y>
                         <z>0</z>
                         <width>3.013497591</width>
                         <height>1.513419032</height>
@@ -256,8 +297,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>731.668701172</x>
-                        <y>568.343139648</y>
+                        <x>708.034729004</x>
+                        <y>668.381713867</y>
                         <z>0</z>
                         <width>36.784126282</width>
                         <height>21.398887634</height>
@@ -268,23 +309,31 @@
                         <opacity>0</opacity>
                     </world>
                 </instance>
-                <instance type="UIBorder" uid="82">
+                <instance type="BattleFont" uid="88">
                     <properties>
-                        <left-margin>8</left-margin>
-                        <right-margin>8</right-margin>
-                        <top-margin>8</top-margin>
-                        <bottom-margin>8</bottom-margin>
-                        <edges>Stretch</edges>
-                        <fill>Stretch</fill>
+                        <character-width>6</character-width>
+                        <character-height>6</character-height>
+                        <character-set> !&quot;#$%&amp;&apos;()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_</character-set>
+                        <text>LV19</text>
+                        <scale>3</scale>
                         <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
-                        <seams>Overlap</seams>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
-                        <TargetLeft>33</TargetLeft>
-                        <TargetTop>251</TargetTop>
-                        <TargetRight>608</TargetRight>
-                        <TargetBottom>391</TargetBottom>
+                        <Name>PlayerLV</Name>
+                        <Voice></Voice>
+                        <FullText></FullText>
+                        <EndFunc></EndFunc>
+                        <Interactive>false</Interactive>
+                        <CurrentChar>0</CurrentChar>
+                        <T>0</T>
+                        <Timeout>0</Timeout>
+                        <RainbowColor>0</RainbowColor>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Tint">
@@ -294,18 +343,26 @@
                                 <red>1</red>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="AdjustHSL">
+                            <parameters>
+                                <hue>0</hue>
+                                <luminosity>1</luminosity>
+                                <saturation>1</saturation>
+                            </parameters>
+                        </effect-instance>
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>85.28099823</x>
-                        <y>396.074005127</y>
+                        <x>166</x>
+                        <y>409</y>
                         <z>0</z>
-                        <width>461.95098877</width>
-                        <height>33.268001556</height>
+                        <width>102.685821533</width>
+                        <height>20</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -328,25 +385,55 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="HPBarMask" uid="68">
+                <instance type="HPMask" uid="89">
                     <properties>
+                        <left-margin>12</left-margin>
+                        <right-margin>12</right-margin>
+                        <top-margin>12</top-margin>
+                        <bottom-margin>12</bottom-margin>
+                        <edges>Stretch</edges>
+                        <fill>Stretch</fill>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <hotspot>Top-left</hotspot>
+                        <seams>Overlap</seams>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>346</x>
-                        <y>413</y>
+                        <x>366</x>
+                        <y>410</y>
                         <z>0</z>
-                        <width>110</width>
+                        <width>108</width>
                         <height>22</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="HPMaskDR" uid="90">
+                    <properties>
+                        <left-margin>12</left-margin>
+                        <right-margin>12</right-margin>
+                        <top-margin>12</top-margin>
+                        <bottom-margin>12</bottom-margin>
+                        <edges>Stretch</edges>
+                        <fill>Stretch</fill>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                        <seams>Overlap</seams>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>396</x>
+                        <y>488</y>
+                        <z>0</z>
+                        <width>108</width>
+                        <height>22</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -358,11 +445,11 @@
                     <blend-mode>9</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>290.458099365</x>
-                        <y>401.34487915</y>
+                        <x>364</x>
+                        <y>408</y>
                         <z>0</z>
-                        <width>110</width>
-                        <height>27.553405762</height>
+                        <width>112</width>
+                        <height>26</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -388,7 +475,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>304</x>
-                        <y>496</y>
+                        <y>503</y>
                         <z>0</z>
                         <width>16</width>
                         <height>16</height>
@@ -408,7 +495,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>320</x>
-                        <y>496</y>
+                        <y>503</y>
                         <z>0</z>
                         <width>16</width>
                         <height>16</height>
@@ -600,7 +687,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>32</x>
-                        <y>432</y>
+                        <y>435</y>
                         <z>0</z>
                         <width>110</width>
                         <height>42</height>
@@ -626,7 +713,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
-                        <y>432</y>
+                        <y>435</y>
                         <z>0</z>
                         <width>110</width>
                         <height>42</height>
@@ -652,7 +739,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>344</x>
-                        <y>432</y>
+                        <y>435</y>
                         <z>0</z>
                         <width>110</width>
                         <height>42</height>
@@ -678,7 +765,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>608</x>
-                        <y>432</y>
+                        <y>435</y>
                         <z>0</z>
                         <width>110</width>
                         <height>42</height>

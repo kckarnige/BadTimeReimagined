@@ -162,9 +162,6 @@
                     <param id="0" name="Family name">&quot;Determination Sans&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
-                <action id="-16" name="Wait" sid="913240923577861" type="System">
-                    <param id="0" name="Seconds">0.1</param>
-                </action>
                 <action id="-9" name="Destroy" sid="690606778882967" type="Text" />
                 <action id="5" name="Check item exists" sid="620551920789128" type="LocalStorage">
                     <param id="0" name="Key">&quot;PlayerNameSave&quot;</param>
@@ -366,6 +363,64 @@
                 </action>
                 <action id="6" name="Stop" sid="563325877997669" type="Audio">
                     <param id="0" name="Tag">&quot;GayMusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="682285618618790">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="390374341418365" type="System">
+                    <param id="0" name="Variable">DevMode</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="830566549368977" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-28" name="Set effect parameter" sid="883505881039605" type="PlayerHeart">
+                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="573900466089683" type="PlayerHeart">
+                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                    <param id="1" name="Parameter index">1</param>
+                    <param id="2" name="Value">23.53</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="632493919210984" type="PlayerHeart">
+                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                    <param id="1" name="Parameter index">2</param>
+                    <param id="2" name="Value">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="383410461994167">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="484060737748328" type="System">
+                    <param id="0" name="Variable">DevMode</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="619118561627741" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-28" name="Set effect parameter" sid="889141068274062" type="PlayerHeart">
+                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">100</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="596045651951933" type="PlayerHeart">
+                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                    <param id="1" name="Parameter index">1</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="675145189962734" type="PlayerHeart">
+                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                    <param id="1" name="Parameter index">2</param>
+                    <param id="2" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
@@ -1044,21 +1099,6 @@
                                 <action id="-8" name="Set angle" sid="2501214630109601" type="PlayerHeart">
                                     <param id="0" name="Angle">90</param>
                                 </action>
-                                <action id="-28" name="Set effect parameter" sid="280318405424329" type="PlayerHeart">
-                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
-                                    <param id="1" name="Parameter index">0</param>
-                                    <param id="2" name="Value">100</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="323937072427355" type="PlayerHeart">
-                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
-                                    <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">0</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="304968347093798" type="PlayerHeart">
-                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
-                                    <param id="1" name="Parameter index">2</param>
-                                    <param id="2" name="Value">0</param>
-                                </action>
                                 <action id="-15" name="Set visible" sid="7722436274433268" type="PlayerHeart">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
@@ -1172,32 +1212,6 @@
                                             </actions>
                                         </event-block>
                                     </sub-events>
-                                </event-block>
-                                <event-block sid="682285618618790">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="390374341418365" type="System">
-                                            <param id="0" name="Variable">DevMode</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-28" name="Set effect parameter" sid="883505881039605" type="PlayerHeart">
-                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
-                                            <param id="1" name="Parameter index">0</param>
-                                            <param id="2" name="Value">0</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="573900466089683" type="PlayerHeart">
-                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
-                                            <param id="1" name="Parameter index">1</param>
-                                            <param id="2" name="Value">23.53</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="632493919210984" type="PlayerHeart">
-                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
-                                            <param id="1" name="Parameter index">2</param>
-                                            <param id="2" name="Value">100</param>
-                                        </action>
-                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -1649,27 +1663,6 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="626298172331466">
-                                    <conditions>
-                                        <condition id="5" inverted="1" name="Is tag playing" sid="382468660514447" type="Audio">
-                                            <param id="0" name="Tag">&quot;GayMusic&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="6" name="Stop" sid="562976653793048" type="Audio">
-                                            <param id="0" name="Tag">&quot;BoneMusic&quot;</param>
-                                        </action>
-                                        <action id="6" name="Stop" sid="776071520511702" type="Audio">
-                                            <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
-                                        </action>
-                                        <action id="0" name="Play" sid="517429487227299" type="Audio">
-                                            <param id="0" name="Audio file">mus_dogshrine_2</param>
-                                            <param id="2" name="Loop">1</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;GayMusic&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
                             </sub-events>
                         </event-block>
                         <event-block sid="276270697904185">
@@ -1684,56 +1677,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="752269331097379" title="Funny Bone Song">
-            <sub-events>
-                <event-block any="1" sid="344737372343810">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="835623428659590" type="System">
-                            <param id="0" name="Variable">ChangingName</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block any="1" sid="221401688764935">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="353710601035998" type="System">
-                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">&quot;SANS&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="856134369650888">
-                                    <conditions>
-                                        <condition id="5" inverted="1" name="Is tag playing" sid="929682162733933" type="Audio">
-                                            <param id="0" name="Tag">&quot;BoneMusic&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="6" name="Stop" sid="721430335381492" type="Audio">
-                                            <param id="0" name="Tag">&quot;GayMusic&quot;</param>
-                                        </action>
-                                        <action id="6" name="Stop" sid="590348295505730" type="Audio">
-                                            <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
-                                        </action>
-                                        <action id="0" name="Play" sid="502121590045116" type="Audio">
-                                            <param id="0" name="Audio file">mus_muscle</param>
-                                            <param id="2" name="Loop">1</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;BoneMusic&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="824280973500859" title="If no funny music">
+        <event-group description="" sid="824280973500859" title="Menu Music">
             <sub-events>
                 <event-block sid="160160501335265">
                     <conditions>
@@ -1748,12 +1692,92 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="199429872222747">
+                        <event-block any="1" sid="221401688764935">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="353710601035998" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;SANS&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="590348295505730" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="502121590045116" type="Audio">
+                                    <param id="0" name="Audio file">mus_muscle</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="704331109756656">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="938317530361709" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;CARNIG&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="959880030539485" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KCKARN&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="684999330247393" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KAYCAR&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="497084574771754" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KCK&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="136762672911952" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KC&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="448453554071153" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KICKTB&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="182880045497004" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="243303059004254" type="Audio">
+                                    <param id="0" name="Audio file">mus_dogshrine_2</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="199429872222747">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="202199606252695" type="System">
                                     <param id="0" name="First value">uppercase(Name)</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Second value">&quot;KRIS&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="577045393756421" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;CAROL&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="867117150909499" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;DES&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="452334091479240" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;DECEMB&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1768,6 +1792,61 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block any="1" sid="438537594851167">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="171647246373806" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;NOELLE&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="641073840285773" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;RUDY&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="671111148014937" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;RUDOLP&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="750703567426511" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="930999117317404" type="Audio">
+                                    <param id="0" name="Audio file">mus_options_winter</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="951756243339177">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="776554686803528" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;AZZY&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="455520662301147" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;ASRIEL&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="256403701420320" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="434032564560015" type="Audio">
+                                    <param id="0" name="Audio file">mus_musicbox</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="279403143509164">
                             <conditions>
                                 <condition id="-8" inverted="1" name="Compare two values" sid="953330377188290" type="System">
@@ -1775,18 +1854,170 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Second value">&quot;KRIS&quot;</param>
                                 </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="236526491903691" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;CARNIG&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="982591055649149" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KCKARN&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="259121083904652" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KAYCAR&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="522934896338227" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KCK&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="221918070575551" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KC&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="363826883207035" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;SANS&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="793559710705819" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;KICKTB&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="560014809875841" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;SANS&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="285522970971392" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;SANS&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="408988889468375" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;AZZY&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="220846502877109" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;ASRIEL&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="496584537630372" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;CAROL&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="471996406662189" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;DES&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="904462344032923" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;DECEMB&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="908902291557452" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;NOELLE&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="561440750773706" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;RUDY&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="843157817492955" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;RUDOLP&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="837910707312488" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;SUSIE&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="329402310405574" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;JEVIL&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="860222960477492" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;SPAMTO&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="106295731350615" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;SPAMTS&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="758928167735472" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;TENNA&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="138373812139788" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;LANCER&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="335533523530713" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;RALSEI&quot;</param>
+                                </condition>
                             </conditions>
-                            <actions>
-                                <action id="6" name="Stop" sid="955459555543136" type="Audio">
-                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="179200743767139" type="Audio">
-                                    <param id="0" name="Audio file">mus_options_fall</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="588863571881637">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="638440795826741" type="System">
+                                            <param id="0" name="First value">DevMode</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="6" name="Stop" sid="955459555543136" type="Audio">
+                                            <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="983235359569916" type="Audio">
+                                            <param id="0" name="Audio file">mus_options_fall</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="291188156792519">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="454412486753547" type="System">
+                                            <param id="0" name="First value">DevMode</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="6" name="Stop" sid="491689938790059" type="Audio">
+                                            <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="441229492852891" type="Audio">
+                                            <param id="0" name="Audio file">mus_options_summer</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -1797,7 +2028,9 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
-                        <condition id="-1" name="Every tick" sid="998827523018970" type="System" />
+                        <condition id="-6" name="Every X seconds" sid="998827523018970" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="403705870680733" type="Potassium" />
@@ -1810,6 +2043,11 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
+                                <condition id="-14" name="Compare variable" sid="817317146510070" type="System">
+                                    <param id="0" name="Variable">ChangingName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                                 <condition id="5" inverted="1" name="Is tag playing" sid="276643300232146" type="Audio">
                                     <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
                                 </condition>
@@ -1818,12 +2056,6 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="6" name="Stop" sid="227975286704193" type="Audio">
-                                    <param id="0" name="Tag">&quot;BoneMusic&quot;</param>
-                                </action>
-                                <action id="6" name="Stop" sid="463938650806368" type="Audio">
-                                    <param id="0" name="Tag">&quot;GayMusic&quot;</param>
-                                </action>
                                 <action id="0" name="Call function" sid="464631221310284" type="Function">
                                     <param id="0" name="Name">&quot;PlayMenuMusic&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
@@ -1840,84 +2072,11 @@
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block any="1" sid="888791643574980">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="705366740170567" type="System">
-                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">&quot;CARNIG&quot;</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="667483881890613" type="System">
-                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">&quot;KCKARN&quot;</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="174902697543495" type="System">
-                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">&quot;KAYCAR&quot;</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="651397342392918" type="System">
-                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">&quot;KCK&quot;</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="605847886484939" type="System">
-                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">&quot;KC&quot;</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="938723231736012" type="System">
-                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">&quot;SANS&quot;</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="936278014279578" type="System">
-                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">&quot;KICKTB&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                        </event-block>
-                        <event-block sid="443748822823058">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="892881082719932" type="System" />
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="705855464714544">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="796138998525422" type="System">
-                                            <param id="0" name="Variable">BattleStart</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                        <condition id="5" inverted="1" name="Is tag playing" sid="622554837385992" type="Audio">
-                                            <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
-                                        </condition>
-                                        <condition id="5" inverted="1" name="Is tag playing" sid="996514852700597" type="Audio">
-                                            <param id="0" name="Tag">&quot;WinJingle&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="6" name="Stop" sid="691902085919983" type="Audio">
-                                            <param id="0" name="Tag">&quot;BoneMusic&quot;</param>
-                                        </action>
-                                        <action id="6" name="Stop" sid="794367200907076" type="Audio">
-                                            <param id="0" name="Tag">&quot;GayMusic&quot;</param>
-                                        </action>
-                                        <action id="0" name="Call function" sid="949321615751531" type="Function">
-                                            <param id="0" name="Name">&quot;PlayMenuMusic&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="6" name="Stop" sid="134257729413325" type="Audio">
+                            <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>

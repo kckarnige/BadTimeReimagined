@@ -1126,10 +1126,70 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;KRIS&quot;</param>
                         </condition>
-                        <condition id="-8" name="Compare two values" sid="624223076017351" type="System">
+                        <condition id="-8" name="Compare two values" sid="862241667405958" type="System">
                             <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;KNIGHT&quot;</param>
+                            <param id="2" name="Second value">&quot;CAROL&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="907822786343912" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;DES&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="291397674521722" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;DECEMB&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="756425381290387" type="System">
+                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;NOELLE&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="499693641626280" type="System">
+                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;RUDY&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="902629226286777" type="System">
+                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;RUDOLP&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="662321617660233" type="System">
+                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;SUSIE&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="180289576350258" type="System">
+                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;JEVIL&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="383329196950130" type="System">
+                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;SPAMTO&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="255674050753134" type="System">
+                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;SPAMTS&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="599599112659310" type="System">
+                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;TENNA&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="191498624719712" type="System">
+                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;LANCER&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="850779025931000" type="System">
+                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;RALSEI&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
