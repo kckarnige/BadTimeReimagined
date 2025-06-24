@@ -320,10 +320,10 @@
                                 <point x="0" y="0.5" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="-0.5" hotspotY="1.375" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_strike_1.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="0.421875" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_strike_2.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="0.166667" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_strike_3.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="-0.772727" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_strike_4.png" />
+                        <frame duration="1" hotspotX="-0.5" hotspotY="1.36364" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_strike_1.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.428571" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_strike_2.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.15625" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_strike_3.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="-0.75" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_strike_4.png" />
                         <frame duration="1" hotspotX="-0.142857" hotspotY="-4" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_strike_5.png" />
                     </animation>
                 </animation-folder>

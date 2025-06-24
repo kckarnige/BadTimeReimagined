@@ -58,12 +58,12 @@
                 </action>
                 <action id="5" name="Push" sid="6875653235496314" type="PlayerItems">
                     <param id="0" name="Where">0</param>
-                    <param id="1" name="Value">3</param>
+                    <param id="1" name="Value">4</param>
                     <param id="2" name="Axis">0</param>
                 </action>
                 <action id="5" name="Push" sid="9651685953078992" type="PlayerItems">
                     <param id="0" name="Where">0</param>
-                    <param id="1" name="Value">3</param>
+                    <param id="1" name="Value">4</param>
                     <param id="2" name="Axis">0</param>
                 </action>
                 <action id="0" name="Call function" sid="8840925379318578" type="Function">
@@ -1298,19 +1298,6 @@
             <actions>
                 <action id="-15" name="Set visible" sid="790937082046681" type="KR">
                     <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-16" name="Set opacity" sid="620102078745788" type="KR">
-                    <param id="0" name="Opacity">100</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="225401372716959">
-            <conditions>
-                <condition id="-22" name="Else" sid="879986333661347" type="System" />
-            </conditions>
-            <actions>
-                <action id="-16" name="Set opacity" sid="362324559501961" type="KR">
-                    <param id="0" name="Opacity">50</param>
                 </action>
             </actions>
         </event-block>
@@ -3539,7 +3526,7 @@
                                     <param id="0" name="X">SansLegs.X</param>
                                 </action>
                                 <action id="-2" name="Set Y" sid="7182343775218483" type="Strike">
-                                    <param id="0" name="Y">SansLegs.Y - 76</param>
+                                    <param id="0" name="Y">SansLegs.Y - 96</param>
                                 </action>
                                 <action id="0" name="Play" sid="5050089995289068" type="Audio">
                                     <param id="0" name="Audio file">PlayerFight</param>

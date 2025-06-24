@@ -598,10 +598,10 @@
                             <param id="0" name="Object to create">DefaultFont</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">0</param>
-                            <param id="3" name="Y">256</param>
+                            <param id="3" name="Y">246</param>
                         </action>
                         <action id="0" name="Set text" sid="444771425631318" type="DefaultFont">
-                            <param id="0" name="Text">&quot;- Bad Time Simulator: Reimagined -&quot;</param>
+                            <param id="0" name="Text">&quot;Bad Time Simulator: Reimagined&quot;</param>
                         </action>
                         <action id="-7" name="Set size" sid="556838508960155" type="DefaultFont">
                             <param id="0" name="Width">640</param>
@@ -617,7 +617,7 @@
                             <param id="0" name="Object to create">DefaultFont</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">0</param>
-                            <param id="3" name="Y">256</param>
+                            <param id="3" name="Y">246</param>
                         </action>
                         <action id="0" name="Set text" sid="489665522615425" type="DefaultFont">
                             <param id="0" name="Text">&quot; &quot; &amp; newline &amp; &quot;By KiCKTheBucket&quot;</param>
