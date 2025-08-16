@@ -6,6 +6,8 @@ This project is a mod of [Bad Time Simulator](https://github.com/Jcw87/c2-sans-f
 
 The web version can be played [here](https://kckarnige.github.io/sans), and the downloadable versions can be found [here](https://github.com/kckarnige/BadTimeReimagined/releases).
 
+It's also on [GameJolt](https://gamejolt.com/games/badtimesimre/694456)!
+
 This mod and the original Bad Time Simulator were made in [Construct 2](https://www.scirra.com/construct2).
 
 Known Issues
@@ -18,7 +20,7 @@ If you want to contact them for some reason, you can do so through the following
 
 - [Steam](http://steamcommunity.com/id/Jcw87/)
 
-KayoticCarnige's Contacts
+KiCKinTheBucket's Contacts
 -------
 If you want to contact me, just DM through my server:
 - [Twitter (@kckarnige)](https://twitter.com/kckarnige)
