@@ -1121,80 +1121,60 @@
                 </event-block>
                 <event-block any="1" sid="810700605304733">
                     <conditions>
-                        <condition id="-8" name="Compare two values" sid="929088627820393" type="System">
-                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;KRIS&quot;</param>
-                        </condition>
-                        <condition id="-8" name="Compare two values" sid="862241667405958" type="System">
-                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;CAROL&quot;</param>
-                        </condition>
                         <condition id="-8" name="Compare two values" sid="907822786343912" type="System">
                             <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;DES&quot;</param>
+                            <param id="2" name="Second value">&quot;DESS&quot;</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="291397674521722" type="System">
                             <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;DECEMB&quot;</param>
                         </condition>
-                        <condition id="-8" name="Compare two values" sid="756425381290387" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;NOELLE&quot;</param>
-                        </condition>
                         <condition id="-8" name="Compare two values" sid="499693641626280" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;RUDY&quot;</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="902629226286777" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;RUDOLP&quot;</param>
                         </condition>
-                        <condition id="-8" name="Compare two values" sid="662321617660233" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;SUSIE&quot;</param>
-                        </condition>
                         <condition id="-8" name="Compare two values" sid="180289576350258" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;JEVIL&quot;</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="383329196950130" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;SPAMTO&quot;</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="255674050753134" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;SPAMTS&quot;</param>
                         </condition>
-                        <condition id="-8" name="Compare two values" sid="599599112659310" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                        <condition id="-8" name="Compare two values" sid="318864690467155" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;TENNA&quot;</param>
+                            <param id="2" name="Second value">&quot;PIPIS&quot;</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="191498624719712" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;LANCER&quot;</param>
                         </condition>
-                        <condition id="-8" name="Compare two values" sid="850779025931000" type="System">
-                            <param id="0" name="First value">uppercase(Name)</param>
+                        <condition id="-8" name="Compare two values" sid="804037730299702" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;RALSEI&quot;</param>
+                            <param id="2" name="Second value">&quot;SPAMTS&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="839397752419882" type="PlayerNameFont">
-                            <param id="0" name="Text">&quot;&apos;&apos;&quot; &amp; KrisQuote &amp; &quot;&apos;&apos;&quot;</param>
+                            <param id="0" name="Text">&quot;Don&apos;t forget.&quot;</param>
                         </action>
                         <action id="-28" name="Set effect parameter" sid="696303108414877" type="PlayerNameFont">
                             <param id="0" name="Effect">&quot;Tint&quot;</param>
@@ -1215,6 +1195,165 @@
                             <param id="0" name="Scale">3</param>
                         </action>
                         <action id="-9" name="Set value" sid="196452066142134" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="787716787206351">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="821606936210035" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;KRIS&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="382687316398592" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;The first hero.&quot;&amp;newline&amp;&quot;The cage with human soul and parts!&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="650957677128329" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="423928245184542" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="464411422388000" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="299024710656110" type="PlayerNameFont">
+                            <param id="0" name="Scale">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="173452133346723" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="258512708170781">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="110850442904320" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;SUSIE&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="739056911656616" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;The second hero.&quot;&amp;newline&amp;&quot;The girl with hope crossed on her heart.&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="673602141148409" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="984582618642899" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="317643873398800" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="857397817848383" type="PlayerNameFont">
+                            <param id="0" name="Scale">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="426224252959626" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="332411940636302">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="264232131160288" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;RALSEI&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="441252044724918" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;The third hero.&quot;&amp;newline&amp;&quot;The prince, alone in deepest dark.&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="424005923346277" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="910820437957797" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="456157805063329" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="703478659675963" type="PlayerNameFont">
+                            <param id="0" name="Scale">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="396469309903869" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="202583597050511">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="835636794629922" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;CAROL&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="533496012086870" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;NOELLE&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="286193343433545" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;TENNA&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="888381348833749" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;MANTLE&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="568617759331611" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;&apos;&apos;&quot; &amp; KrisQuote &amp; &quot;&apos;&apos;&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="591598049953908" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="552367163266739" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="531799138606366" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="456394046644564" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="745532305278026" type="System">
                             <param id="0" name="Variable">Level</param>
                             <param id="1" name="Value">19</param>
                         </action>
