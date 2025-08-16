@@ -2,9 +2,9 @@
 
 This project is a mod of [Bad Time Simulator](https://github.com/Jcw87/c2-sans-fight), by [Jcw87](https://github.com/Jcw87).
 
-The full 4.5.0 version has been released!
+### The full 5.0 version has been released!
 
-The web version can be played [here](https://kckarnige.github.io/BadTimeRevamped), and the downloadable versions can be found [here](https://github.com/kckarnige/BadTimeRevamped/releases).
+The web version can be played [here](https://kckarnige.github.io/sans), and the downloadable versions can be found [here](https://github.com/kckarnige/BadTimeReimagined/releases).
 
 This mod and the original Bad Time Simulator were made in [Construct 2](https://www.scirra.com/construct2).
 
