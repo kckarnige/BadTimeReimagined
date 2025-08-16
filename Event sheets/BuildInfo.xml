@@ -6,7 +6,7 @@
         <variable constant="0" name="buildType" sid="407825804870298" static="0" type="text">Stable</variable>
         <variable constant="0" name="DesktopBuild" sid="767752196151469" static="0" type="number">1</variable>
         <variable constant="0" name="HideMouse" sid="344011919054341" static="0" type="number">0</variable>
-        <variable constant="0" name="ShowBuildInfo" sid="433491871019591" static="0" type="number">0</variable>
+        <variable constant="0" name="FSDown" sid="586505851043264" static="0" type="number">0</variable>
         <event-group description="" sid="463479059386579" title="Show Build Info" />
         <event-block sid="171781272408395">
             <conditions>
@@ -41,7 +41,7 @@
         <event-block sid="192408445736983">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="607523004533086" type="System">
-                    <param id="0" name="Variable">ShowBuildInfo</param>
+                    <param id="0" name="Variable">DevMode</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -55,7 +55,7 @@
         <event-block sid="678932586034704">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="509194295966005" type="System">
-                    <param id="0" name="Variable">ShowBuildInfo</param>
+                    <param id="0" name="Variable">DevMode</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -66,69 +66,63 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="336158639304998">
+        <event-block sid="552489772838302">
             <conditions>
-                <condition id="-8" name="Compare two values" sid="834183248287593" type="System">
-                    <param id="0" name="First value">uppercase(Name)</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Second value">&quot;DEVBUG&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="834541142763072" type="System">
-                    <param id="0" name="Variable">ShowBuildInfo</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="636323771512168">
-            <conditions>
-                <condition id="-8" name="Compare two values" sid="939143998940880" type="System">
-                    <param id="0" name="First value">uppercase(Name)</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Second value">&quot;DEVNOT&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="706883156518169" type="System">
-                    <param id="0" name="Variable">ShowBuildInfo</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="916532625065565">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="400818467219155" type="Keyboard">
+                <condition id="0" name="On key pressed" sid="671495717042119" type="Keyboard">
                     <param id="0" name="Key">115</param>
                 </condition>
-                <condition id="10" inverted="1" name="Is fullscreen" sid="847756625748854" type="Browser" />
-                <condition id="-14" name="Compare variable" sid="698622388357052" type="System">
+                <condition id="-14" name="Compare variable" sid="543170089951609" type="System">
+                    <param id="0" name="Variable">FSDown</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="475823186118801" type="System">
                     <param id="0" name="Variable">DesktopBuild</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
+                <condition id="10" inverted="1" name="Is fullscreen" sid="817416642832942" type="Browser" />
             </conditions>
             <actions>
-                <action id="10" name="Request fullscreen" sid="392845350535686" type="Browser">
+                <action id="10" name="Request fullscreen" sid="501980853994623" type="Browser">
                     <param id="0" name="Mode">4</param>
+                </action>
+                <action id="-16" name="Wait" sid="432742063303373" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-9" name="Set value" sid="392845350535686" type="System">
+                    <param id="0" name="Variable">FSDown</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="388701991222791">
             <conditions>
-                <condition id="0" name="On key pressed" sid="243969203039654" type="Keyboard">
+                <condition id="0" name="On key pressed" sid="171531853052800" type="Keyboard">
                     <param id="0" name="Key">115</param>
                 </condition>
-                <condition id="10" name="Is fullscreen" sid="297686962917870" type="Browser" />
+                <condition id="-14" name="Compare variable" sid="308158343768328" type="System">
+                    <param id="0" name="Variable">FSDown</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
                 <condition id="-14" name="Compare variable" sid="142528414122158" type="System">
                     <param id="0" name="Variable">DesktopBuild</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
+                <condition id="10" name="Is fullscreen" sid="297686962917870" type="Browser" />
             </conditions>
             <actions>
                 <action id="11" name="Cancel fullscreen" sid="704736625943501" type="Browser" />
                 <action id="2" name="Focus" sid="680560223477410" type="Browser" />
+                <action id="-16" name="Wait" sid="224130681341315" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-9" name="Set value" sid="877803744684501" type="System">
+                    <param id="0" name="Variable">FSDown</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
         </event-block>
     </events>

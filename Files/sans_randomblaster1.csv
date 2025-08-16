@@ -1,5 +1,5 @@
 0,CombatZoneResize,121,186,526,391,TLResume,,,
-0,HeartTeleport,320,304,,,,,,
+0,HeartTeleport,320,304,FadeToHidden,,,,,
 0,HeartMode,0,,,,,,,
 0,TLPause,,,,,,,,
 0.5,SET,Loop,15,,,,,,
@@ -27,4 +27,5 @@
 0,ANGLE,Ang,$EndX,$EndY,$HeartX,$HeartY,,,
 0,GasterBlaster,0,$X,$Y,$EndX,$EndY,$Ang,0.46666,0.03333
 0.53333,JMPNZ,6,$Loop,,,,,,
+0,BattleBackground,FadeToVisible,,,,,,,
 0,EndAttack,,,,,,,,

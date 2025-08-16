@@ -24,6 +24,10 @@
                 </action>
                 <action id="0" name="Call function" sid="8628336839377844" type="Function">
                     <param id="0" name="Name">&quot;RegisterItem&quot;</param>
+                    <param id="1" name="Parameter {n}">0{###}45{###}&quot;Snowman Piece&quot;{###}&quot;SnowPiece&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="612211486302888" type="Function">
+                    <param id="0" name="Name">&quot;RegisterItem&quot;</param>
                     <param id="1" name="Parameter {n}">0{###}40{###}&quot;Legendary Hero&quot;{###}&quot;L. Hero&quot;</param>
                 </action>
             </actions>
@@ -37,7 +41,7 @@
             <actions>
                 <action id="5" name="Push" sid="5239690354155186" type="ItemDB">
                     <param id="0" name="Where">0</param>
-                    <param id="1" name="Value">0</param>
+                    <param id="1" name="Value">1</param>
                     <param id="2" name="Axis">0</param>
                 </action>
                 <action id="3" name="Set at XY" sid="2395370485202404" type="ItemDB">
