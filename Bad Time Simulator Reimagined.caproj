@@ -2,7 +2,7 @@
 <c2project>
     <name>Bad Time Simulator Reimagined</name>
     <description>i hate mondays.</description>
-    <version>5.0.0</version>
+    <version>5.0.1</version>
     <author>KiCKinTheBucket</author>
     <author-email></author-email>
     <author-website>https://kckarnige.online/BadTimeRevamped</author-website>
@@ -1763,8 +1763,10 @@
         <file name="mus_options_summer.ogg" />
         <file name="mus_leave.ogg" />
         <file name="mus_options_winter.ogg" />
-        <file name="delta_menu.ogg" />
         <file name="mus_musicbox.ogg" />
+        <file name="lancer.ogg" />
+        <file name="delta_menu.ogg" />
+        <file name="spamton_meeting.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
