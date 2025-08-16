@@ -5537,6 +5537,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="848929784858246" type="Audio">
+                                            <param id="0" name="Audio file">PlayerDamaged</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="0" name="Play" sid="7693770790135112" type="Audio">
                                             <param id="0" name="Audio file">Slam</param>
                                             <param id="2" name="Loop">0</param>
