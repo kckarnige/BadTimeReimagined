@@ -1785,26 +1785,6 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Second value">&quot;MANTLE&quot;</param>
                                 </condition>
-                            </conditions>
-                            <actions>
-                                <action id="6" name="Stop" sid="933480594007614" type="Audio">
-                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="708817440845946" type="Audio">
-                                    <param id="0" name="Audio file">delta_menu</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block any="1" sid="438537594851167">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="171647246373806" type="System">
-                                    <param id="0" name="First value">uppercase(Name)</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">&quot;NOELLE&quot;</param>
-                                </condition>
                                 <condition id="-8" name="Compare two values" sid="641073840285773" type="System">
                                     <param id="0" name="First value">uppercase(Name)</param>
                                     <param id="1" name="Comparison">0</param>
@@ -1815,13 +1795,18 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Second value">&quot;RUDOLP&quot;</param>
                                 </condition>
+                                <condition id="-8" name="Compare two values" sid="171647246373806" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;NOELLE&quot;</param>
+                                </condition>
                             </conditions>
                             <actions>
-                                <action id="6" name="Stop" sid="750703567426511" type="Audio">
+                                <action id="6" name="Stop" sid="933480594007614" type="Audio">
                                     <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
                                 </action>
-                                <action id="0" name="Play" sid="930999117317404" type="Audio">
-                                    <param id="0" name="Audio file">mus_options_winter</param>
+                                <action id="0" name="Play" sid="708817440845946" type="Audio">
+                                    <param id="0" name="Audio file">delta_menu</param>
                                     <param id="2" name="Loop">1</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
