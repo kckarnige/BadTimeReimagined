@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1755312520,
+	"version": 1755382139,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -114,8 +114,10 @@
 		"res/mus_options_summer.ogg",
 		"res/mus_leave.ogg",
 		"res/mus_options_winter.ogg",
-		"res/delta_menu.ogg",
 		"res/mus_musicbox.ogg",
+		"res/lancer.ogg",
+		"res/delta_menu.ogg",
+		"res/spamton_meeting.ogg",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
