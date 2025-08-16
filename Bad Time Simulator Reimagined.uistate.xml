@@ -10,12 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">BattleScreen</layout>
+        <layout order="0">BattleScreen</layout>
         <layout order="3">MainMenu</layout>
         <event-sheet order="1">Battle</event-sheet>
         <event-sheet order="2">InputManagement</event-sheet>
         <event-sheet order="4">Globals</event-sheet>
-        <event-sheet order="5">BuildInfo</event-sheet>
+        <event-sheet active="1" order="5">BuildInfo</event-sheet>
         <event-sheet order="6">MainMenu</event-sheet>
         <event-sheet order="7">Menus</event-sheet>
         <event-sheet order="8">Fonts</event-sheet>

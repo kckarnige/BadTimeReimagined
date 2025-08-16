@@ -620,7 +620,7 @@
                             <param id="3" name="Y">246</param>
                         </action>
                         <action id="0" name="Set text" sid="489665522615425" type="DefaultFont">
-                            <param id="0" name="Text">&quot; &quot; &amp; newline &amp; &quot;By KiCKTheBucket&quot;</param>
+                            <param id="0" name="Text">&quot; &quot; &amp; newline &amp; &quot;By KiCKinTheBucket&quot;</param>
                         </action>
                         <action id="-7" name="Set size" sid="837166391605115" type="DefaultFont">
                             <param id="0" name="Width">640</param>
