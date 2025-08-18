@@ -1,7 +1,7 @@
 <h1 align="center">Bad Time Simulator: Reimagined</h1>
 
 This project is a mod of [Bad Time Simulator](https://github.com/Jcw87/c2-sans-fight), by [Jcw87](https://github.com/Jcw87).    
-<sub>Based off the [Jul 2017](https://github.com/Jcw87/c2-sans-fight/tree/caa4cbeaf5d8264e8f1deeabb6a0ba25bbf5b63a) version, with some select patches from newer versions:
+<sub>Based off the [Jul 2017](https://github.com/Jcw87/c2-sans-fight/tree/caa4cbeaf5d8264e8f1deeabb6a0ba25bbf5b63a) build, with some select patches from newer versions:
 - [Blue soul color fix](https://github.com/Jcw87/c2-sans-fight/commit/f5b3d6326ab73e8ebfec765ed64c157dc469510f)
 - [Add damage sound to Sans hard slam](https://github.com/Jcw87/c2-sans-fight/commit/56a52335f58bc9bbbe70ae39a58bab787d2c1773)
 - [Bonestab warning color fix](https://github.com/Jcw87/c2-sans-fight/commit/bba2516ab07eea21477166bb1cf929d810329592)
