@@ -662,6 +662,21 @@
                             </collision-poly>
                         </frame>
                     </animation>
+                    <animation framecount="1" loop="0" name="End2" pingpong="0" repeatcount="1" repeatto="0" sid="873413493313814" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.806452">
+                            <image-point name="Sweat" x="0.5" y="0" />
+                            <collision-poly>
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.875" y="0.866667" />
+                                <point x="0.5" y="1" />
+                                <point x="0.125" y="0.866667" />
+                                <point x="0.03125" y="0.5" />
+                                <point x="0.125" y="0.133333" />
+                                <point x="0.5" y="0" />
+                                <point x="0.875" y="0.133333" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
                 </animation-folder>
             </object-type>
             <object-type name="SansBody" sid="6007327897630886">
@@ -883,6 +898,17 @@
                             </collision-poly>
                         </frame>
                         <frame duration="5" hotspotX="0.5" hotspotY="0.964286">
+                            <image-point name="Head" x="0.5" y="0.25" />
+                            <collision-poly>
+                                <point x="0.0178571" y="0.037037" />
+                                <point x="0.982143" y="0.037037" />
+                                <point x="0.982143" y="0.962963" />
+                                <point x="0.0178571" y="0.962963" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="End2" pingpong="0" repeatcount="1" repeatto="0" sid="979058334081366" speed="3">
+                        <frame duration="5" hotspotX="0.5" hotspotY="0.75">
                             <image-point name="Head" x="0.5" y="0.25" />
                             <collision-poly>
                                 <point x="0.0178571" y="0.037037" />

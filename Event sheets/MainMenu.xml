@@ -1102,6 +1102,9 @@
                                 <action id="-15" name="Set visible" sid="7722436274433268" type="PlayerHeart">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
+                                <action id="-16" name="Wait" sid="534858150255545" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
                                 <action id="0" name="Call function" sid="9637040683959957" type="Function">
                                     <param id="0" name="Name">&quot;MenuMain&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
@@ -2069,6 +2072,10 @@
                 </event-block>
                 <event-block sid="583580484168575">
                     <conditions>
+                        <condition id="0" name="Compare text" sid="624538549246783" type="PlayerName">
+                            <param id="0" name="Text">Name</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
                         <condition id="-14" name="Compare variable" sid="340636201023407" type="System">
                             <param id="0" name="Variable">ChangingName</param>
                             <param id="1" name="Comparison">0</param>

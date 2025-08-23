@@ -25,6 +25,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="11">RPGText</event-sheet>
         <event-sheet order="12">Timeline</event-sheet>
         <event-sheet order="14">CheckIn</event-sheet>
+        <event-sheet order="15">AttackLoader</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

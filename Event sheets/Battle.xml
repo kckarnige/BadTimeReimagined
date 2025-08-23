@@ -2594,9 +2594,9 @@
                                     <param id="0" name="Name">&quot;CombatZoneResize&quot;</param>
                                     <param id="1" name="Parameter {n}">CombatZone.BBoxLeft{###}CombatZone.BBoxTop{###}CombatZone.BBoxRight{###}CombatZone.BBoxBottom</param>
                                 </action>
-                                <action id="0" name="Call function" sid="4551826621279671" type="Function">
+                                <action id="0" name="Call function" sid="565570774937788" type="Function">
                                     <param id="0" name="Name">&quot;SansAnimation&quot;</param>
-                                    <param id="1" name="Parameter {n}">&quot;Tired&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;&quot;</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="5653485612350006" type="SansHead">
                                     <param id="0" name="Animation">&quot;Tired2&quot;</param>
@@ -2774,9 +2774,69 @@
                     <param id="0" name="Animation">&quot;NoEyes&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="0" name="Call function" sid="360088087352068" type="Function">
-                    <param id="0" name="Name">&quot;SansText&quot;</param>
-                    <param id="1" name="Parameter {n}">&quot;you really are a&quot; &amp; newline &amp; &quot;freak, huh?&quot;</param>
+                <action id="-3" name="Create object" sid="939918714982260" type="System">
+                    <param id="0" name="Object to create">SpeechBubble</param>
+                    <param id="1" name="Layer">&quot;Enemies&quot;</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="536274025238570" type="SpeechBubble">
+                    <param id="0" name="X">SansLegs.X + 56</param>
+                </action>
+                <action id="-2" name="Set Y" sid="325876536457558" type="SpeechBubble">
+                    <param id="0" name="Y">SansLegs.Y - 128</param>
+                </action>
+                <action id="-3" name="Create object" sid="803166907266386" type="System">
+                    <param id="0" name="Object to create">SansFont</param>
+                    <param id="1" name="Layer">&quot;Enemies&quot;</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="882413466714934" type="SansFont">
+                    <param id="0" name="X">SpeechBubble.X + 34</param>
+                </action>
+                <action id="-2" name="Set Y" sid="810655445521402" type="SansFont">
+                    <param id="0" name="Y">SpeechBubble.Y + 16</param>
+                </action>
+                <action id="-5" name="Set width" sid="663346622107613" type="SansFont">
+                    <param id="0" name="Width">190</param>
+                </action>
+                <action id="-6" name="Set height" sid="896982261336708" type="SansFont">
+                    <param id="0" name="Height">64</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="485911482609982" type="SansFont">
+                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="932920331035951" type="SansFont">
+                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                    <param id="1" name="Parameter index">1</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="175124288822903" type="SansFont">
+                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                    <param id="1" name="Parameter index">2</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="638185642889472" type="SansFont">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="810715593206210" type="SansFont">
+                    <param id="0" name="Instance variable">Voice</param>
+                    <param id="1" name="Value">&quot;SansSpeak&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="709426555719070" type="SansFont">
+                    <param id="0" name="Instance variable">FullText</param>
+                    <param id="1" name="Value">&quot;you really are a&quot; &amp; newline &amp; &quot;freak, huh?&quot;</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="854144649031375" type="SansFont">
+                    <param id="0" name="Instance variable">Interactive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="139930718965492" type="Function">
+                    <param id="0" name="Name">&quot;TLPause&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
                 <action id="-16" name="Wait" sid="936340174056774" type="System">
                     <param id="0" name="Seconds">0.8</param>
@@ -2787,10 +2847,6 @@
                 </action>
                 <action id="-9" name="Destroy" sid="884348245618316" type="SansFont" />
                 <action id="33" name="Stop all" sid="946343264661269" type="Audio" />
-                <action id="0" name="Call function" sid="565570774937788" type="Function">
-                    <param id="0" name="Name">&quot;SansAnimation&quot;</param>
-                    <param id="1" name="Parameter {n}">&quot;&quot;</param>
-                </action>
                 <action id="4" name="Set animation" sid="801388863054527" type="SansHead">
                     <param id="0" name="Animation">&quot;End&quot;</param>
                     <param id="1" name="From">1</param>
@@ -2827,13 +2883,13 @@
                 <action id="-16" name="Wait" sid="248304151159333" type="System">
                     <param id="0" name="Seconds">3.5</param>
                 </action>
-                <action id="-10" name="Set value" sid="634396497725720" type="SansHead">
-                    <param id="0" name="Instance variable">OffsetY</param>
-                    <param id="1" name="Value">-26</param>
+                <action id="4" name="Set animation" sid="311806113664964" type="SansHead">
+                    <param id="0" name="Animation">&quot;End2&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
-                <action id="-10" name="Set value" sid="683956537432985" type="SansTorso">
-                    <param id="0" name="Instance variable">OffsetY</param>
-                    <param id="1" name="Value">-24</param>
+                <action id="4" name="Set animation" sid="662579004457512" type="SansTorso">
+                    <param id="0" name="Animation">&quot;End2&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
                 <action id="4" name="Set animation" sid="668332576216126" type="SansLegs">
                     <param id="0" name="Animation">&quot;End&quot;</param>
@@ -2842,8 +2898,8 @@
                 <action id="-3" name="Create object" sid="868694359069617" type="System">
                     <param id="0" name="Object to create">DamageFont</param>
                     <param id="1" name="Layer">&quot;Enemies&quot;</param>
-                    <param id="2" name="X">272</param>
-                    <param id="3" name="Y">76</param>
+                    <param id="2" name="X">242</param>
+                    <param id="3" name="Y">46</param>
                 </action>
                 <action id="0" name="Set text" sid="582759882938828" type="DamageFont">
                     <param id="0" name="Text">&quot;9999999&quot;</param>
@@ -2874,14 +2930,14 @@
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action id="-16" name="Wait" sid="632675647526426" type="System">
-                    <param id="0" name="Seconds">0.25</param>
+                    <param id="0" name="Seconds">0.5</param>
                 </action>
                 <action id="0" name="Call function" sid="897948539485132" type="Function">
                     <param id="0" name="Name">&quot;BlackScreen&quot;</param>
                     <param id="1" name="Parameter {n}">1</param>
                 </action>
                 <action id="-16" name="Wait" sid="861082721583877" type="System">
-                    <param id="0" name="Seconds">4.0</param>
+                    <param id="0" name="Seconds">2.0</param>
                 </action>
                 <action id="0" name="Call function" sid="607081476185302" type="Function">
                     <param id="0" name="Name">&quot;Win3&quot;</param>
