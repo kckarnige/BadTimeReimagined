@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>CheckIn</name>
+    <events>
+        <event-block sid="989301041368623">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="113851195128204" type="System" />
+                <condition id="-14" name="Compare variable" sid="794517519346459" type="System">
+                    <param id="0" name="Variable">OpenedMainMenu</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="553080624688741" type="System">
+                    <param id="0" name="Variable">Dead</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Call function" sid="325480470917600" type="Function">
+                    <param id="0" name="Name">&quot;BlackScreen&quot;</param>
+                    <param id="1" name="Parameter {n}">1</param>
+                </action>
+                <action id="0" name="Call function" sid="349296827249477" type="Function">
+                    <param id="0" name="Name">&quot;TLStop&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="33" name="Stop all" sid="871236565539161" type="Audio" />
+                <action id="-16" name="Wait" sid="348387285241023" type="System">
+                    <param id="0" name="Seconds">0.01</param>
+                </action>
+                <action id="33" name="Stop all" sid="357483448261147" type="Audio" />
+                <action id="-9" name="Destroy" sid="782614204575307" type="AttackSprite" />
+                <action id="-9" name="Destroy" sid="779585487052894" type="AttackTiled" />
+                <action id="-9" name="Destroy" sid="725254726173812" type="Attack9Patch" />
+                <action id="-25" name="Go to layout (by name)" sid="595890634867151" type="System">
+                    <param id="0" name="Layout">&quot;MainMenu&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -179,7 +179,7 @@
                             <param id="3" name="Y">0</param>
                         </action>
                         <action id="-1" name="Set X" sid="5215295811409118" type="SpeechBubble">
-                            <param id="0" name="X">SansLegs.X + 64</param>
+                            <param id="0" name="X">SansLegs.X + 56</param>
                         </action>
                         <action id="-2" name="Set Y" sid="521153523069346" type="SpeechBubble">
                             <param id="0" name="Y">SansLegs.Y - 128</param>
@@ -191,7 +191,7 @@
                             <param id="3" name="Y">0</param>
                         </action>
                         <action id="-1" name="Set X" sid="532799251136149" type="SansFont">
-                            <param id="0" name="X">SpeechBubble.X + 32</param>
+                            <param id="0" name="X">SpeechBubble.X + 34</param>
                         </action>
                         <action id="-2" name="Set Y" sid="2099097229921674" type="SansFont">
                             <param id="0" name="Y">SpeechBubble.Y + 16</param>

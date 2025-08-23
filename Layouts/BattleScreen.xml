@@ -91,7 +91,7 @@
                         <character-width>6</character-width>
                         <character-height>6</character-height>
                         <character-set> !&quot;#$%&amp;&apos;()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_</character-set>
-                        <text>&quot;CHARA&quot;</text>
+                        <text>NAME</text>
                         <scale>3</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -273,7 +273,7 @@
                         <character-width>6</character-width>
                         <character-height>6</character-height>
                         <character-set> !&quot;#$%&amp;&apos;()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_</character-set>
-                        <text>LV:19</text>
+                        <text>LV ?!</text>
                         <scale>3</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>

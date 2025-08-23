@@ -1,6 +1,6 @@
 0,BattleBackground,Hidden,,,,,,,
 0,Sound,ChurchBell,,ChurchBell,,,,,
-0,SansAnimation,Tired,,,,,,,
+0,SansAnimation,,,,,,,,
 0,SansHead,ClosedEyes,,,,,,,
 9,SansHead,Wink,,,,,,,
 0,SansText,ready for another go?,,,,,,,
@@ -40,8 +40,7 @@
 0,GasterBlaster,1,640,480,379,446,270,0.333,0.26666
 0.7,GasterBlaster,2,0,240,139,306,0,0.666,0.5
 0,GasterBlaster,2,640,240,499,306,180,0.666,0.5
-3,SansAnimation,Tired,,,,,,,
-0,SansHead,Default,,,,,,,
+3,SansHead,Default,,,,,,,
 0,SansTorso,Default,,,,,,,
 0,SansText,what's with the face?,,,,,,,
 0,SansHead,ClosedEyes,,,,,,,

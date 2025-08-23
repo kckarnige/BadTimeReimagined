@@ -2,10 +2,10 @@
 <c2project>
     <name>Bad Time Simulator Reimagined</name>
     <description>i hate mondays.</description>
-    <version>5.0.3</version>
+    <version>5.1.0</version>
     <author>KiCKinTheBucket</author>
     <author-email></author-email>
-    <author-website>https://kckarnige.online/BadTimeRevamped</author-website>
+    <author-website>https://kckarnige.online/BadTimeReimagined</author-website>
     <app-id>com.kckarnige.btsimre</app-id>
     <unique-id>3pln6vqtdnxgu</unique-id>
     <saved-with-version>28000</saved-with-version>
@@ -47,7 +47,7 @@
         <width>640</width>
         <height>480</height>
     </window-size>
-    <pixel-rounding>0</pixel-rounding>
+    <pixel-rounding>1</pixel-rounding>
     <preview-effects>1</preview-effects>
     <first-layout>MainMenu</first-layout>
     <use-loader-layout>0</use-loader-layout>
@@ -58,7 +58,7 @@
         <prop name="Fullscreen in browser">Letterbox integer scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
         <prop name="Loader style">Progress bar &amp; logo</prop>
-        <prop name="Orientations">Any</prop>
+        <prop name="Orientations">Landscape</prop>
         <prop name="Pause on unfocus">Yes</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
@@ -634,6 +634,34 @@
                             </collision-poly>
                         </frame>
                     </animation>
+                    <animation framecount="2" loop="0" name="End" pingpong="0" repeatcount="1" repeatto="0" sid="217242421271586" speed="3">
+                        <frame duration="10" hotspotX="0.5" hotspotY="1">
+                            <image-point name="Sweat" x="0.5" y="0" />
+                            <collision-poly>
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.875" y="0.866667" />
+                                <point x="0.5" y="1" />
+                                <point x="0.125" y="0.866667" />
+                                <point x="0.03125" y="0.5" />
+                                <point x="0.125" y="0.133333" />
+                                <point x="0.5" y="0" />
+                                <point x="0.875" y="0.133333" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <image-point name="Sweat" x="0.5" y="0" />
+                            <collision-poly>
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.875" y="0.866667" />
+                                <point x="0.5" y="1" />
+                                <point x="0.125" y="0.866667" />
+                                <point x="0.03125" y="0.5" />
+                                <point x="0.125" y="0.133333" />
+                                <point x="0.5" y="0" />
+                                <point x="0.875" y="0.133333" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
                 </animation-folder>
             </object-type>
             <object-type name="SansBody" sid="6007327897630886">
@@ -752,7 +780,7 @@
                             <image-point name="Torso" x="0.477273" y="0" />
                         </frame>
                     </animation>
-                    <animation framecount="1" loop="0" name="Sitting" pingpong="0" repeatcount="1" repeatto="0" sid="6382436399145165" speed="5">
+                    <animation framecount="1" loop="0" name="D" pingpong="0" repeatcount="1" repeatto="0" sid="6382436399145165" speed="5">
                         <frame duration="1" hotspotX="0.519231" hotspotY="0.888889">
                             <image-point name="Torso" x="0.519231" y="0.111111" />
                             <collision-poly>
@@ -761,6 +789,11 @@
                                 <point x="0" y="0.0555556" />
                                 <point x="1" y="0.0555556" />
                             </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="End" pingpong="0" repeatcount="1" repeatto="0" sid="620951405543785" speed="5">
+                        <frame duration="1" hotspotX="0.480769" hotspotY="1">
+                            <image-point name="Torso" x="0.480769" y="0" />
                         </frame>
                     </animation>
                 </animation-folder>
@@ -827,6 +860,35 @@
                                 <point x="1" y="0.037037" />
                                 <point x="1" y="0.962963" />
                                 <point x="0" y="0.962963" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="3" loop="0" name="End" pingpong="0" repeatcount="1" repeatto="0" sid="670361788735315" speed="3">
+                        <frame duration="5" hotspotX="0.5" hotspotY="0.964286">
+                            <image-point name="Head" x="0.5" y="0.25" />
+                            <collision-poly>
+                                <point x="0.0178571" y="0.037037" />
+                                <point x="0.982143" y="0.037037" />
+                                <point x="0.982143" y="0.962963" />
+                                <point x="0.0178571" y="0.962963" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="5" hotspotX="0.5" hotspotY="0.964286">
+                            <image-point name="Head" x="0.5" y="0.25" />
+                            <collision-poly>
+                                <point x="0.0178571" y="0.037037" />
+                                <point x="0.982143" y="0.037037" />
+                                <point x="0.982143" y="0.962963" />
+                                <point x="0.0178571" y="0.962963" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="5" hotspotX="0.5" hotspotY="0.964286">
+                            <image-point name="Head" x="0.5" y="0.25" />
+                            <collision-poly>
+                                <point x="0.0178571" y="0.037037" />
+                                <point x="0.982143" y="0.037037" />
+                                <point x="0.982143" y="0.962963" />
+                                <point x="0.0178571" y="0.962963" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1702,6 +1764,7 @@
         <event-sheet>PlayerNameQuote.xml</event-sheet>
         <event-sheet>RainbowText.xml</event-sheet>
         <event-sheet>MusicFadeOut.xml</event-sheet>
+        <event-sheet>CheckIn.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Gamepad" uid="8">
@@ -1767,6 +1830,8 @@
         <file name="lancer.ogg" />
         <file name="delta_menu.ogg" />
         <file name="spamton_meeting.ogg" />
+        <file name="snd_damage.m4a" />
+        <file name="snd_damage.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

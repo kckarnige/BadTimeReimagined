@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Fonts</name>
     <events>
+        <include>CheckIn</include>
         <event-block any="1" sid="5834412354404267">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="5276123136482903" type="System" />

@@ -818,8 +818,8 @@
                         <width>14</width>
                         <height>44</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>-0.772727251</hotspotY>
+                        <hotspotX>-1</hotspotX>
+                        <hotspotY>5.666666508</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1312,7 +1312,7 @@
                     </properties>
                     <instance-variables>
                         <ID>0</ID>
-                        <Action>MenuFightEnemy</Action>
+                        <Action>MenuFight</Action>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1338,7 +1338,7 @@
                     </properties>
                     <instance-variables>
                         <ID>1</ID>
-                        <Action>MenuActEnemy</Action>
+                        <Action>MenuAct</Action>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
